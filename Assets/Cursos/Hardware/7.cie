@@ -1,0 +1,7 @@
+Voltaje de la fuente de alimentación
+Los distintos conectores también proporcionan diferentes voltajes
+Los voltajes más comunes suministrados son de 3,3 voltios, 5 voltios y 12 voltios. Las fuentes de 3,3 voltios y 5 voltios se usan normalmente en circuitos digitales, mientras que las fuentes de 12 voltios se utilizan para alimentar los motores de las unidades de disco y los ventiladores.
+ también pueden ser de riel único, riel doble o rieles múltiples. Un riel es la placa de circuito impreso (PCB), incluida dentro de la fuente de alimentación, a la que se conectan los cables externos.
+Un riel único tiene todos los conectores conectados a la misma PCB, mientras que una PCB de rieles múltiples tiene PCB separadas para cada conector.}
+
+Una PC puede tolerar leves fluctuaciones de alimentación, pero una desviación considerable puede provocar que la fuente de alimentación falle.

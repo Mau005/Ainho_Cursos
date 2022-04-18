@@ -1,0 +1,38 @@
+Conjunto de chips de la placa base
+En la figura se muestra cómo una placa base conecta distintos componentes
+
+IMAGEN = "14"
+
+Existen 2 tipos
+Puente Norte:
+Controla el acceso de alta velocidad a la RAM y la tarjeta de Video.
+También controla la velocidad a la que la CPU se comunica con todos los demás
+componentes del equipo. A veces, la tarjeta de video está integrada en el puente norte.
+
+Puente sur:
+Permite que la CPU se comunique con dispositivos de velocidad más lenta, como unidades de disco duro, puertos de bus serial universal(USB) y ranuras de expansión
+
+Factores de forma de la placa base
+El factor de la forma de la placa base se refiere al tamaño y la forma de la placa.
+También describe la disposición fisica de los distintos componentes y dispositivos
+
+Existen 3 factores de forma comunes de la placa base
+
+Tecnología avanzada extendida (ATX):
+Este es el factor de forma más común de las placas base, el Gabinete de ATX alberga los puertos integrados de E/S en la placabase de ATX estándar.
+La fuente de alimentación de la ATX se conecta a la placa base mediante un conector único de 20 pines
+
+Micro-ATX:
+Es un factor mas pequeño que está diseñando para proporcionar compatibilidad con versiones anteriores de la ATX.
+las placas micro-ATX a menudo utilizan el mismo conjunto de chips de puente norte y puente sur y la mismos conectores de energía que las placas de ATX de tamaño normal,
+pueden utilizar mismos componentes que ATX
+Poseen menos ranuras de expancion y pueden usar gabinetes  de ATX
+
+ITX:
+el factor de forma ITX es muy pequeño, existen muchos tipos de ITX,
+la mini-ITX es una de las más usada, utliza muy poca potencia, por lo que no se necesitan ventiladores
+para mantenerlo refrigerado. solo tienen una ranura PCI para las tarjetas de expansión.
+
+IMAGEN = "15"
+
+Nota: Es importante distinguir entre los factores de forma. La opción de factor de forma de la placa base determina cómo se conectan los componentes individuales a ella

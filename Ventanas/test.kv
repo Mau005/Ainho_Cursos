@@ -1,0 +1,48 @@
+<ModBox@MDBoxLayout>:
+    size_hint_y: None
+    height: "35dp"
+    spacing: "20dp"
+
+    MDIcon:
+        icon: "school-outline"
+    MDTextButton:
+        pos_hint: {"center_x": 1, "center_y": 0.5}
+        text: "Este curso y esto y esto tambien"
+    MDCheckbox:
+
+
+<Ventana>:
+    name: "test"
+    contenedor:contenedor
+
+    MDCard:
+        id: screen
+        orientation: "vertical"
+        size_hint: .9,.85
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        MDToolbar:
+            id: toolbar
+            title: "Curso Hardware: "
+            elevation: 10
+            pos_hint: {'top': 1}
+        ScrollView:
+            bar_width: 10
+            do_scroll_x: False  # Important for MD compliance
+            MDList:
+
+                spacing: "10dp"
+                padding: "30dp"
+                id: contenedor
+                MDBoxLayout:
+                    orientation: "vertical"
+                ModBox:
+                ModBox:
+                ModBox:
+                ModBox:
+                ModBox:
+                ModBox:
+                ModBox:
+                ModBox:
+                ModBox:
+                ModBox:
+                ModBox:

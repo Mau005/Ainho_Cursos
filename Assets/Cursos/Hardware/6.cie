@@ -1,0 +1,24 @@
+Conectores
+Una fuente de alimentacion incluye varios conectores, para alimentar los distintos componentes internos, placa base y unidades de disco.
+los conectores se encuentran "Enchavetados" que significa que están diseñados para insertarse en una sola orientación
+
+Conectores:
+IMAGEN= "3"
+
+Un contector con ranuras de 20 o 24 pines.
+IMAGEN = "4"
+
+Conector con clave SATA
+IMAGEN = "5"
+
+Conector con clave Molex
+IMAGEN = "6"
+
+Conector con clave Berg
+IMAGEN = "7"
+
+Conector de fuente auxiliar de 4 a 8 pines
+IMAGEN = "8"
+
+Conector de fuente PCIe de 6 a 8 pines
+IMAGEN = "9"

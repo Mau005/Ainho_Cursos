@@ -1,0 +1,20 @@
+Memoria Caché
+
+L1
+La caché es una caché interna que se integra en la CPU, Una CPU puede tener varios modelos con una cantidada diferente de caché L1
+
+L2
+Es una caché externa que se originalmente se montaba en la placa madre cerca de la CPU. En la actualidad, la caché L2 se integra en la CPU
+
+L3
+Se usa en algunas estaciones de trabajo y CPU de servidores de tecnología avanzada
+
+Memoria sin paridad
+No revisa los errerrores de la memoria. La RAM sin paridad es la RAM mas común que se utiliza para las estaciones de trabajo domésticas y empresariales
+
+Paridad
+la memoria con paridad contiene ocho bits para los datos y un bit para verificar errores, EL bit para verificación de errores se denomina "bit de paridad"
+
+ECC
+La memoria con código de correción de errores puede detectar errores de varios bits y corregir estos errores.
+en los servidores se utilizan para análisas de datos

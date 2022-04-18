@@ -1,0 +1,18 @@
+¿Qué es una CPU?
+La unidad de procesamiento central (CPU) es responsable de interpretar y ejecutar los comandos. Controla las instrucciones desde otro hardware del equipo, como teclado y software. La CPU interpreta las instrucciones y envía la información al monitor o realiza las tareas solicitadas.
+IMAGEN = "16"
+
+La CPU es un pequeño microchip que reside dentro de un paquete de CPU. A menudo, el paquete de CPU se conoce como CPU. Los paquetes de CPU tienen distintos factores de forma y cada estilo requiere un socket particular en la placa base. Entre los fabricantes de CPU más conocidos se incluyen Intel y AMD.
+El socket de la CPU es la conexión entre la placa base y el procesador
+
+IMAGEN = "17"
+
+Matriz de pines en cuadrícula (PGA):
+arquitectura de la PGA, los pines se encuentran en la parte inferior del paquete de procesadores, que se inserta en el socket de la CPU de la placa base mediante una fuerza de inserción cero (ZIF). La ZIF se refiere a la cantidad de fuerza que se necesita para instalar una CPU en el socket o la ranura de la placa base.
+
+
+IMAGEN = "18"
+Interfaz de conexión a nivel físico(LGA):
+Arquitectura de LGA, los pines se encuentran en el socket y no en el procesador.
+
+

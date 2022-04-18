@@ -1,0 +1,259 @@
+
+<RegistrarUsuarios>:
+    MDCard:
+        size_hint: None, None
+        size: 400, 500
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        #elevation: 50
+        padding: 25
+        spacing: 25
+        orientation: 'vertical'
+        MDBoxLayout
+            orientation: 'vertical'
+
+            MDBoxLayout:
+                orientation: "horizontal"
+                MDLabel:
+                    text: "Correo: "
+                MDTextField:
+                    id: corre_text
+                    multiline: False
+            MDBoxLayout:
+                orientation: "horizontal"
+                MDLabel:
+                    text: "Password: "
+                MDTextField:
+                    multiline: False
+                    password: True
+                    id: pass_text
+            MDBoxLayout:
+                orientation: "horizontal"
+                MDLabel:
+                    text: "Repetir Password: "
+                MDTextField:
+                    multiline: False
+                    password: True
+                    id: pass_text_repetir
+            MDBoxLayout:
+                orientation: "horizontal"
+                MDRoundFlatButton:
+                    text: "Registrar!"
+                    on_press: root.registrar(corre_text.text,pass_text.text,pass_text_repetir.text)
+                MDRoundFlatButton:
+                    text: "Salir"
+                    on_press: root.siguiente("ingreso")
+
+<Ingresos>:
+    MDCard:
+        size_hint: None, None
+        size: 300, 400
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        #elevation: 50
+        padding: 25
+        spacing: 25
+        orientation: 'vertical'
+        MDLabel:
+            id: bienvenido_texto
+            text: "Ainho Cursos v1.0Beta"
+            font_size: 40
+            halign: 'center'
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y: 15
+        MDTextField:
+            id: usuario
+            hint_text: "correo"
+            icon_right: "account"
+            size_hint_x: None
+            width: 200
+            font_size: 18
+            pos_hint: {"center_x": 0.5}
+        MDTextField:
+            id: password
+            hint_text: "contraseña"
+            icon_right: "eye-off"
+            size_hint_x: None
+            width: 200
+            font_size: 18
+            pos_hint: {"center_x": 0.5}
+            password: True
+
+        MDLabel:
+        BoxLayout:
+            orientation : "horizontal"
+            spacing: dp(10)
+
+
+            MDRoundFlatButton:
+                text: "Ingresar"
+                font_size: 12
+                pos_hint: {"center_x": 0.5}
+                on_press: root.siguiente("inicio")
+
+            MDRoundFlatButton:
+                text: "Limpiar"
+                font_size: 12
+                pos_hint: {"center_x": 0.5}
+                on_press: root.limpiar()
+            MDRoundFlatButton:
+                text: "Registrarse"
+                font_size: 12
+                pos_hint: {"center_x": 0.5}
+                on_press: root.siguiente("registrar")
+
+        Widget:
+            size_hint_y: None
+            height: 10
+
+
+<Inicio>:
+    manejador_sub_ventanas : manejador_sub_ventanas
+    MDNavigationLayout:
+        ScreenManager:
+
+            MDScreen:
+                radius: [25, 0, 0, 0]
+                BoxLayout:
+                    orientation: "vertical"
+                    MDToolbar:
+                        title: "Ainho Cursos v1.0 Beta"
+                        #elevation: 10
+                        pos_hint: {"top": 1}
+                        size_hint_y: None
+                        height: "20dp"
+                    ScreenManager:
+                        id: manejador_sub_ventanas
+
+        MDNavigationDrawer:
+            id: nav_drawer
+            BoxLayout:
+                orientation: "vertical"
+                padding: "8dp"
+                spacing: "8dp"
+
+                AnchorLayout:
+                    anchor_x: "left"
+                    size_hint_y: None
+                    height: avatar.height
+                    MDCard:
+                        pos_hint: {'center_x': .5, 'center_y': .5}
+                        size_hint: None, None
+                        size: "256dp", "256dp"
+                        #elevation: 10
+
+                    Image:
+                        id: avatar
+                        pos_hint: {'center_x': .5, 'center_y': .5}
+                        size_hint: None, None
+                        size: "256dp", "256dp"
+                        source: "Assets/Imagen.png"
+
+
+                MDLabel:
+                    text: "Cuenta:"
+                    font_style: "Button"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+
+                MDLabel:
+                    id: label_correo
+                    text: "mpino1701@gmail.com"
+                    font_style: "Caption"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+
+                MDTextButton:
+                    icon: "language-python"
+                    text: "Cursos"
+
+                MDTextButton:
+                    icon: "language-python"
+                    text: "Mis Cursos"
+
+                MDTextButton:
+                    icon: "language-python"
+                    text: "Mis Suscripciones"
+
+                MDTextButton:
+                    icon: "language-python"
+                    text: "Salir"
+
+                MDFillRoundFlatIconButton:
+                    icon: "language-python"
+                    text: "Suscribete"
+                ScrollView:
+                    id: md_list
+                    BoxLayout:
+                        orientation: "vertical"
+                        size_hint_y: None
+                        MDTextButton:
+                            icon: "language-python"
+                            text: "Mis Cursos"
+                        MDTextButton:
+                            icon: "language-python"
+                            text: "Mis Cursos"
+                        MDTextButton:
+                            icon: "language-python"
+                            text: "Mis Cursos"
+                        MDTextButton:
+                            icon: "language-python"
+                            text: "Mis Cursos"
+
+
+<KitchenSinkSwiperMagicButton@MagicBehavior+MDIconButton>
+<SwiperObjectos@MDSwiperItem>
+    RelativeLayout:
+        FitImage:
+            id: image
+            source: root.source
+            radius: [30,]
+
+        MDBoxLayout:
+            adaptive_height: True
+            spacing: "12dp"
+            radius: [0, 0, image.radius[0], image.radius[0]]
+
+            KitchenSinkSwiperMagicButton:
+                id: icon
+                icon: "weather-sunny"
+                user_font_size: "30sp"
+
+            MDTextButton:
+                id: nombre
+                font_style: "H5"
+                size_hint_y: None
+                height: self.texture_size[1]
+                pos_hint: {"center_y": .5}
+
+                shorten: True
+
+
+
+<ListaCursos>
+    contenedor:contenedor
+
+    MDCard:
+        id: screen
+        orientation: "vertical"
+        size_hint: .9,.85
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        MDToolbar:
+            id: toolbar
+            title: "Curso Hardware: "
+            elevation: 10
+            pos_hint: {'top': 1}
+        ScrollView:
+            bar_width: 10
+            do_scroll_x: False  # Important for MD compliance
+            MDList:
+                id: contenedor
+                spacing: "10dp"
+                padding: "30dp"
+
+<Cursos>
+    contenedor_imagenes: contenedor_imagenes
+    MDBoxLayout:
+        orientation: 'vertical'
+        spacing: '8dp'
+        MDSwiper:
+            id: contenedor_imagenes

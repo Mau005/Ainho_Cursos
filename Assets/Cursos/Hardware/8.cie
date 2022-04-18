@@ -1,0 +1,30 @@
+##Esto es comentario
+TITULO = Placas base
+También conocida como placa del sistema o placa principal
+Una placa base es una placa de circuito impreso (PCB) que contiene los buses, o las rutas eléctricas.
+que interconectan los componentes electrónicos. Estos componentes se pueden soldar directamente a la placa base o se pueden agregar mediante sockets, ranuras de expansión y puertos.
+
+
+TITULO = Componentes de la placa base
+Las siguientes son algunas de las conexiones en la placa base en las que pueden agregarse componentes de computación, como se muestra en la Figura 1:
+Unidad de procesamiento central (CPU): se considera el cerebro del equipo.
+Memoria de acceso aleatorio (RAM): esta es una ubicación temporal para almacenar datos y aplicaciones.
+Ranuras de expansión: brindan las ubicaciones para conectar componentes adicionales.
+Conjunto de chips: consta de los circuitos integrados en la placa base que controlan la manera en que el hardware del sistema interactúa con la CPU y la placa base. Además, establece cuánta memoria se puede agregar a una placa base y el tipo de conectores de dicha placa.
+Chip de sistema básico de entrada y salida (BIOS) e interfaz de firmware unificada extensible (UEFI): BIOS se utiliza para ayudar a arrancar el equipo y administrar el flujo de datos entre la unidad de disco duro, la tarjeta de video, el teclado, el mouse y otros componentes. Recientemente, BIOS se ha mejorado con UEFI. UEFI especifica una interfaz de software diferente para los servicios de arranque y tiempo de ejecución, pero aún depende de BIOS tradicional para la configuración del sistema, la prueba automática de encendido (POST) y la configuración.
+IMAGEN = "10.png"
+
+
+TITULO = IDE
+Integrated Drive Electronics(IDE) es una interfaz estándar más antigua para conectar unidades de disco a la placa base.
+La interfaz IDE utiliza un conector de 40 pines. Cada interfaz IDE admite un máximo de dos dispositivos
+IMAGEN = "11.png"
+
+TITULO = SATA
+Serial Advanced Technology Attachment (SATA), es una interfaz de unidades de unidad de disco que se utiliza para conectar unidades ópticas, discos duros y unidades de estado sólido a la placa base.
+SATA admite el intercambio con el sistema activo, para reemplazar dispositivos sin apagar la computadora
+IMAGEN = "12.png"
+
+TITULO = USB Interno
+Se utiliza un conector de 19 pines para conectar los puertos USB 3 externos de la carcasa de la computadora a la placa base. Los conectores USB 1.1 y USB 2 tienen 9 pines
+IMAGEN = "13.png"
