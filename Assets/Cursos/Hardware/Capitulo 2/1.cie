@@ -1,0 +1,27 @@
+TITULO = ""
+
+Linux 
+
+Los LVM
+PV fisical volum
+vg  volum group
+lv logical volum
+
+CLI interfaz line comander
+o temrinal
+sda Sata disck 
+
+sda
+20gb
+sdb
+30gb
+sdc
+10gbs
+
+esto 
+
+de la logical volum se genera las parti
+ciones
+
+
+10.2.1.8

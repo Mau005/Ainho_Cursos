@@ -9,10 +9,6 @@ from Ventanas.SubVentanas import Ingresos, Inicio, RegistrarUsuarios
 Builder.load_file("Ventanas/main.kv")
 
 
-class ShadowCard(RectangularElevationBehavior, MDBoxLayout):
-    pass
-
-
 class AinhoCursos(MDApp):
 
     def __init__(self, **kargs):

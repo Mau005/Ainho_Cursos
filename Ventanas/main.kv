@@ -45,8 +45,7 @@
 
 <Ingresos>:
     MDCard:
-        size_hint: None, None
-        size: 300, 400
+        size_hint: .9,.8
         pos_hint: {"center_x": 0.5, "center_y": 0.5}
         #elevation: 50
         padding: 25
@@ -79,27 +78,27 @@
             password: True
 
         MDLabel:
-        BoxLayout:
-            orientation : "horizontal"
-            spacing: dp(10)
 
+        MDTextButton:
+            text: "Registrarse"
+            font_size: 12
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            on_press: root.siguiente("registrar")
 
-            MDRoundFlatButton:
-                text: "Ingresar"
-                font_size: 12
-                pos_hint: {"center_x": 0.5}
-                on_press: root.siguiente("inicio")
+        
 
-            MDRoundFlatButton:
-                text: "Limpiar"
-                font_size: 12
-                pos_hint: {"center_x": 0.5}
-                on_press: root.limpiar()
-            MDRoundFlatButton:
-                text: "Registrarse"
-                font_size: 12
-                pos_hint: {"center_x": 0.5}
-                on_press: root.siguiente("registrar")
+        MDRoundFlatButton:
+            text: "Conectar"
+            font_size: 
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            on_press: root.siguiente("inicio")
+
+        MDRoundFlatButton:
+            text: "Sin Conexión"
+            font_size: 
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            on_press: root.siguiente("inicio")
+            
 
         Widget:
             size_hint_y: None
@@ -115,7 +114,7 @@
                 radius: [25, 0, 0, 0]
                 BoxLayout:
                     orientation: "vertical"
-                    MDToolbar:
+                    MDTopAppBar:
                         title: "Ainho Cursos v1.0 Beta"
                         #elevation: 10
                         pos_hint: {"top": 1}
@@ -200,6 +199,7 @@
                             text: "Mis Cursos"
 
 
+
 <KitchenSinkSwiperMagicButton@MagicBehavior+MDIconButton>
 <SwiperObjectos@MDSwiperItem>
     RelativeLayout:
@@ -217,7 +217,6 @@
                 id: icon
                 icon: "weather-sunny"
                 user_font_size: "30sp"
-
             MDTextButton:
                 id: nombre
                 font_style: "H5"
@@ -229,7 +228,7 @@
 
 
 
-<ListaCursos>
+<ContenidoCurso>
     contenedor:contenedor
 
     MDCard:
@@ -237,7 +236,7 @@
         orientation: "vertical"
         size_hint: .9,.85
         pos_hint: {"center_x": 0.5, "center_y": 0.5}
-        MDToolbar:
+        MDTopAppBar:
             id: toolbar
             title: "Curso Hardware: "
             elevation: 10

@@ -1,0 +1,89 @@
+Tipos de RAM y DRAM
+
+RAM dinámica
+Tecnología más antigua, popular hasta mediado de los 90
+Se utilizaba para la memoria principal
+La DRAM descarga gradualmente con pulsos de electricidad para mantener almacenados los datos en el chip
+
+RAM estática
+Requiere energia constante para funcionar
+Suele utilizarse para la memoria Caché
+Consume menos energía
+Mucho más rapida que la DRAM
+Más cara que la DRAM
+
+SDRAM
+DRAM que funciona sincronizada con el bus de memoria
+Capacidad para procesar intrucciones superpuestas en parelelo, por un ejemplo, puede procesar una lectura antes de que se haya completado una escritura
+mayor velocidad de transferencias
+
+DDR SDRAM
+RAM dinámica sincrónica de doble velocidad de datos
+Transfiere el doble de velocidad que la SDRAM
+Puede admitir dos escrituras y dos lecturas
+El conector tiene 184 pines y una sola muesca
+Ultilza voltaje inferior estándar 2.5v
+Familia DDR2, DDR3 y DDR4
+
+DDR2 SDRAM
+RAM dinámica sincrónica DDR2
+la SDRAM DDR2 también transfiere datos al doble de velocidad que la SDRAM
+Funciona a mayor celovidad que la DDR(553 Mhz vs 200 MHz)
+Mejora el rendimiendo al reducir el ruido y la diafonía
+El conector tiene 240 pines
+utiliza voltaje inferior estándar 1.8v
+
+DDR3 SDRAM
+RAM dinámica sincrónica DDR3
+Expande el ancho de banda de memoria al duplicar la frecuencia del reloj de la DDR2
+Consume menos energía que la DDR2 1.5v
+Genera menos calor
+Funciona a velocidad superiores de hasta 800 MHz
+El conector tiene 240 pines
+
+SDRAM DDR4
+RAM dinámica sincrónica DDR4
+la capacidad de almacenamiento cuádriple de la SDRAM DDR3
+Consume menos energía que la DDR3 (1,2v)
+Funciona a velocidades superiores hasta 1600 MHz
+el conector tiene 288 pines
+Disponible con funciones avanzadas de correción de errores, como la memoria ECC para detectar errores de bits múltiples
+
+SDRAM DDR4
+RAM dinámica sincrónica DDR4
+Es cuadruple de la SDRAM DDR3
+Consume menos energía que la DDR3 1,2v
+Funciona a velocidades superiores de 1600 MHz
+El conector tiene 288 pines
+Disponible con funciones avanzadas de correción de errores.
+
+RAM dinámica sincrónica GDDR
+la G es por gráficos
+RAM diseñada especialmente para graficos de video
+Se utiliza junto con una GPU exclusiva
+Familia GDDR, GDDR2, GDDR3, GDDR4 y GDDR5
+Cada miembro de la familia mejora el rendimiento
+Cada miembro de la familia disminuye el consumo de energia
+la SDRAM GDDR procesa grandes cantidades de datos, pero no necesariamente a las velocidades mas rápidas
+
+
+Módulos de memoria RAM
+
+DIP
+el paquete de doble en linea es un chip de memoria individual
+se usaban apra fijarlo a la placa madre
+
+SIMM
+El módulo de memoria en linea simple es una pequeña placa de circuitos
+que contiene varios chips de memoria. Los SIMM tienen configuraciones de 30 pines o 72 pines
+
+Memoria DIMM
+ek de dos linea es una placa de circuitos que contiene chips de SDRAM ,SDRAM DDR, SDRAN DDR2, SDRAM DDR3, SDRAM DDR4, existen DIMM de SDRAM de 168 pines
+DIMM de DDR de 184 pines y DIMMM de ddr2 y ddr3 de 240 pines, DIMM de DDR3 de 288 pines
+
+
+SODIMM
+Tiene configuraciones de 72 y 100 pines, a fin de admitir transferencias de 65 bits, Esta versíon más pequeña y condensada de los módulos DIMM proporciona un almacenamiento de datos de acceso aleatorio que es ideal para usar en computadoras portatiles
+
+
+

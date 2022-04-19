@@ -1,0 +1,13 @@
+{
+    "1":{
+        "nombre": "Capitulo 1",
+        "carpeta": "Capitulo 1",
+        "rango": [1,20]
+    },
+    "2":{
+        "nombre": "Capitulo 2",
+        "carpeta": "Capitulo 2",
+        "rango": [1,20]
+    }
+
+}
