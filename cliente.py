@@ -1,13 +1,10 @@
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager
 from kivymd.app import MDApp
-from kivymd.uix.behaviors import RectangularElevationBehavior
-from kivymd.uix.boxlayout import MDBoxLayout
 
 from Ventanas.SubVentanas import Ingresos, Inicio, RegistrarUsuarios
 
 Builder.load_file("Ventanas/main.kv")
-
 
 class AinhoCursos(MDApp):
 
@@ -18,7 +15,6 @@ class AinhoCursos(MDApp):
         self.ventanas = {}
         self.manejador = ScreenManager() #Encargadod de gestionar toda las ventanas principales
         self.configurar_variables()
-
 
     def configurar_variables(self):
         self.ingresos = Ingresos("ingreso")
