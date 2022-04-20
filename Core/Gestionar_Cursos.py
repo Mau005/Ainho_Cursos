@@ -1,13 +1,12 @@
 import os
 from kivy.uix.scrollview import ScrollView
-from kivymd.uix.boxlayout import MDBoxLayout
-from kivymd.uix.button import MDRectangleFlatButton
+
 from kivymd.uix.card import MDCard
 from kivymd.uix.fitimage import FitImage
 from kivymd.uix.label import MDLabel
 from kivymd.uix.list import MDList
 from kivymd.uix.screen import MDScreen
-from Core.Constantes import RUTA_DEFECTO,RUTA_ERROR_IMAGEN
+from Core.Constantes import RUTA_ERROR_IMAGEN
 
 
 class ModMDLabel(MDLabel):
@@ -31,9 +30,10 @@ class Gestionar_Cursos:
             return None
 
     @classmethod
-    def __gestiona_pagina(self,id_pagina,secuencia_curso):
-        contenedor = MDScreen(name=id_pagina)
-        carta = MDCard(size_hint= [.9,.85], pos_hint = {"center_x": 0.5, "center_y": 0.5})
+    def __gestiona_pagina(self,id_pagina,secuencia_curso,botones):
+
+        contenedor = MDScreen(name=str(id_pagina))
+        carta = MDCard(size_hint= [.9, .85], pos_hint = {"center_x": 0.5, "center_y": 0.5})
         scrollview = ScrollView(bar_width=10, do_scroll_x=False)
         mdlist = MDList(padding="30dp")
         for objetos in secuencia_curso:
@@ -41,24 +41,18 @@ class Gestionar_Cursos:
         scrollview.add_widget(mdlist)
         carta.add_widget(scrollview)
 
-        mdbox = MDBoxLayout(size_hint_y = None, height = "25dp", spacing = "20dp",pos_hint = {"center_x": 1, "center_y": 0.03})
-        btn1  = MDRectangleFlatButton(text = "Atras")
-        btn2 = MDRectangleFlatButton(text="Volver a Menu")
-        btn3 = MDRectangleFlatButton(text="Siguiente")
-        mdbox.add_widget(btn1)
-        mdbox.add_widget(btn2)
-        mdbox.add_widget(btn3)
+
         contenedor.add_widget(carta)
-        contenedor.add_widget(mdbox)
+        contenedor.add_widget(botones)
         return contenedor
 
     @classmethod
-    def cargar_curos(cls,id_pagina,carpeta,archivo):
+    def cargar_cursos(cls,id_pagina,carpeta,archivo,botones):
         secuencia_curso = []
         buscar_secuencia = ""
         control_buscar = False
         control_ciclos = 7
-        ruta = f"{RUTA_DEFECTO}/{carpeta}/{archivo}"
+        ruta = f"{carpeta}/{archivo}"
         contenido = cls.__cargar_curso(ruta)
 
         for lineas in contenido:
@@ -66,9 +60,8 @@ class Gestionar_Cursos:
                 buscar_secuencia += caracter
                 if buscar_secuencia == "IMAGEN":
                     control_buscar = True
-                    print(lineas)
                     contenido = lineas.split("=")[1].replace('"', "").replace(" ","").replace("\n","")
-                    ruta = f"{RUTA_DEFECTO}/{carpeta}/Imagenes/{contenido}"
+                    ruta = f"{carpeta}/Imagenes/{contenido}"
                     if os.path.exists(ruta):
                         secuencia_curso.append(FitImage(source=ruta, size_hint_y=None, height="450dp"))
                     else:
@@ -90,4 +83,4 @@ class Gestionar_Cursos:
             else:
                 if lineas != "\n":
                     secuencia_curso.append(MDLabel(text = lineas, size_hint_y = None))
-        return cls.__gestiona_pagina(id_pagina, secuencia_curso)
+        return cls.__gestiona_pagina(id_pagina, secuencia_curso,botones)

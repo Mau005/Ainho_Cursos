@@ -1,29 +1,15 @@
-from kivy.properties import ObjectProperty, StringProperty
-from kivy.uix.image import AsyncImage
-from kivy.uix.screenmanager import Screen
-
+from kivy.properties import ObjectProperty
 from kivymd.uix.button import MDFlatButton
 from kivymd.uix.dialog import MDDialog
-from kivymd.uix.swiper import MDSwiperItem
+from kivy.uix.screenmanager import ScreenManager
+
+
+from Ventanas.ClasesAbstractas import ABScreen
+from Ventanas.Cursos import Cursos
+from Ventanas.Cursos import ContenidoCurso
 
 import Core.Herramientas as tl
-from abc import abstractmethod
 import Core.Constantes as cn
-
-
-class ABScreen(Screen):
-    def __init__(self, nombre, **args):
-        super().__init__(**args)
-        self.name = nombre
-
-    @abstractmethod
-    def actualizar(self, dt):
-        pass
-
-    @abstractmethod
-    def siguiente(self, nombre):
-        self.manager.current = nombre
-
 
 class Ingresos(ABScreen):
     def __init__(self, nombre, **args):
@@ -52,52 +38,6 @@ class Ingresos(ABScreen):
         super().siguiente(nombre)
 
 
-class Inicio(ABScreen):
-    def siguiente(self, nombre):
-        pass
-
-    def actualizar(self, dt):
-        pass
-
-    manejador_sub_ventanas = ObjectProperty()
-
-    def __init__(self, nombre, **args):
-        super().__init__(nombre, **args)
-        self.cursos = Cursos("cursos")
-        self.sub_ventanas = {}
-
-
-    def agregar_sub_ventanas(self, objeto):
-        self.sub_ventanas.update({objeto.name: objeto})
-        self.manejador_sub_ventanas.add_widget(objeto)
-
-
-class Cursos(ABScreen):
-    def siguiente(self, nombre):
-        pass
-
-    def actualizar(self, dt):
-        pass
-
-    contenedor_imagenes = ObjectProperty()
-
-    def __init__(self, nombre, **args):
-        super().__init__(nombre, **args)
-        self.cursos = tl.cargar_cursos()
-        self.configurar_cursos()
-
-
-    def configurar_cursos(self):
-        if self.cursos != None:
-            for id_curso in self.cursos.keys():
-                obj = SwiperObjectos(id_curso,
-                self.cursos[id_curso]["titulo"], 
-                self.cursos[id_curso]["descr"], 
-                self.cursos[id_curso]["carpeta"], 
-                self.cursos[id_curso]["logo"])
-                self.contenedor_imagenes.add_widget(obj)
-        else:
-            print("No se pudo cargar los cursos por problemas de recopilacion de datos")
 
 class RegistrarUsuarios(ABScreen):
     def actualizar(self, dt):
@@ -135,40 +75,24 @@ class RegistrarUsuarios(ABScreen):
         else:
             print("El password tiene que ser igual")
 
+class Inicio(ABScreen):
+    manejador_sub_ventanas = ObjectProperty()
 
-class SwiperObjectos(MDSwiperItem):
-    source = StringProperty()
+    def __init__(self, nombre, **args):
+        super().__init__(nombre, **args)
+        self.cursos = Cursos("cursos",self.manejador_sub_ventanas)
+        self.agregar_sub_ventanas(self.cursos)
+        self.procesar_paginas()
 
-    def __init__(self, id_curso, titulo, descr, carpeta, logo, **kwargs):
-        super().__init__(**kwargs)
-        
-        self.id_curso = id_curso
-        self.titulo = titulo
-        self.descr = descr
-        self.ids.nombre.text = self.titulo + self.descr
-        
-        self.carpeta = carpeta
-        self.logo = logo
-        
-        ruta = f"{cn.RUTA_DEFECTO}/{self.carpeta}/{self.logo}" 
+    def procesar_paginas(self):
+        for cursos in self.cursos.lista_cursos.keys():
+            self.manejador_sub_ventanas.add_widget(ContenidoCurso(cursos,self.cursos.lista_cursos[cursos]))
 
+    def agregar_sub_ventanas(self, objeto):
+        self.manejador_sub_ventanas.add_widget(objeto)
 
-        if tl.archivo_existe(ruta):
-            self.source = ruta
-        else:
-            self.source = f"{cn.RUTA_DEFECTO}/error.png"
-
-
-class ContenidoCurso(ABScreen):
-    contenedor = ObjectProperty()
-
-    def __init__(self, nombre, nombre_curso, **args):
-        super(ContenidoCurso, self).__init__(**args)
-        self.name = nombre
-        self.ids.toolbar.title = nombre_curso
+    def siguiente(self, nombre):
+        pass
 
     def actualizar(self, dt):
         pass
-
-    def siguiente(self, nombre):
-        super(ContenidoCurso, self).siguiente(nombre)

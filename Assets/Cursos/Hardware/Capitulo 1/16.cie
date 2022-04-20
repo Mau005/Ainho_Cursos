@@ -27,7 +27,6 @@ conecta dispositivos periféricos
 Tarjeta eSATA:
 agrega puertos SATA internos externos y adicionales a un equipo
 
-IMAGENES 1.2.5.1 SACAR IMAGENES
 
 PCI:
 La interconexión de componentes periféricos es una ranura de expansión de 32 bits o de 64 bits. Actualmente se encuentra en pocas computadoras.
@@ -44,7 +43,7 @@ se han  vuelto casi obsoletas
 PCIe
 PCI Express utiliza un bus serie con mayor rendimiento y muchas otras mejoras en comparacion a las anteriores.
 tiene raunas de x1, x4, x8 y x16 que varian en longitud, desde la más corta a la más extensa
-estan x1 y x16 en la imagen
+estan x1 y x16 en la img
 
 Tarjeta de ampliación(Riser)
 Se puede agregar una tarjeta riser a una computadora a fin de proporcionar ranuras de expansión adicionales para mas tarjetas de expansión

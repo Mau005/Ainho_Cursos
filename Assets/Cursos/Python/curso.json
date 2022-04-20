@@ -1,6 +1,7 @@
 {
     "1":{
-        "nombre": "Capitulo 1 Introducción",
+        "nombre": "Capitulo 1",
+        "descr" : "Introducción",
         "carpeta": "Capitulo 1",
         "rango": [1,1]
     }
