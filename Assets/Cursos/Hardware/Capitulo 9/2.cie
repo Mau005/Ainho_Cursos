@@ -1,0 +1,11 @@
+TITULO = Computación en la nube y virtualización
+Por lo general, los términos "computación en la nube" y "virtualización" se utilizan indistintamente; no obstante, significan dos cosas distintas.
+La virtualización permite que un solo equipo aloje varios equipos virtuales independientes que comparten el hardware del equipo host
+El software de virtualización separa el hardware físico real de las instancias de la máquina virtual (VM). Las VM tienen sus propios sistemas operativos y se conectan a los recursos de hardware a través del software que se ejecuta en el equipo host
+Es importante recordar que todas las VM comparten los recursos del equipo host.
+
+La computación en la nube separa las aplicaciones del hardware. Proporciona a las organizaciones la entrega a pedido de servicios informáticos a través de la red. Los proveedores de servicios, como Amazon Web Services (AWS),
+Sin la virtualización, la computación en la nube, del modo en que se la implementa masivamente, no sería posible.
+
+
+IMAGEN = "2.png"

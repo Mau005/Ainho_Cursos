@@ -9,11 +9,9 @@ def cargar_cursos(ruta = None):
     try:
         if ruta != None:
             with open(ruta, "r", encoding="utf-8") as contenido:
-                print("Entro=")
                 return json.load(contenido)
         else:
             with open(RUTA_LISTA_CURSOS, "r",encoding="utf-8") as contenido:
-                print("Entro=")
                 return json.load(contenido)
     except FileNotFoundError as error:
         print(f"El archivo no se ha encontrado error: {error}")

@@ -1,0 +1,43 @@
+TITULO = "Cómo usamos la nube"
+
+Entrega a pedido de servicios informáticos a través de internet. Los servicios (Nube), son de propiedad de los proveedores.
+Ejemplos Redes sociales, Musica etc etc
+
+La Transmisión de aplicaciones virtuales/aplicaciones basadas en la nube sirven para ofrecer la entrega de software a pedido,
+El cliente extrae el código adicional y se aloja de forma host(usuario) para el uso de sin conexión
+Ejemplos:
+Correo electronico, Infraestructura de equipos de escritorio virtual (VDI)
+Soluciones almacenamiento de archivos en la nube, escritorio virtual de windows (WVD)
+
+
+
+TITULO = "Servicios en la nube"
+
+La mayoría de los servicios de computación en la nube pueden clasificarse en tres servicios de computación en la nube principales, según la definición del Instituto Nacional de Normas y Tecnología (NIST) en su Publicación Especial 800-145:
+Software como servicio (SaaS): El proveedor de la nube proporciona acceso a los servicios, como el correo electrónico, el calendario, la comunicación y las herramientas de la oficina a través de Internet en base a una suscripción
+Los proveedores de SaaS incluyen el software de relación de administración de clientes (CRM) Salesforce, Microsoft Office 365, MS SharePoint software y Google G Suite.
+
+Plataforma como servicio (PaaS): El proveedor de la nube proporciona acceso a los sistemas operativos, las herramientas de desarrollo, los lenguajes de programación y las bibliotecas que se utilizan para desarrollar, probar y distribuir aplicaciones
+Los proveedores de PaaS incluyen: Amazon Web Service, Oracle Cloud, Google Clour Platform y Microsoft Azure.
+
+Infraestructura como servicio (IaaS): El proveedor de la nube administra la red y brinda a las organizaciones acceso a los equipos de red, servicios de red virtualizados, almacenamiento, software e infraestructura de red de apoyo. 
+Las organizaciones no necesitan invertir en equipos de capital y solo pagan por una utilización a pedido.
+
+IMAGEN = "9.png"
+
+NOTA: servicios en la nube han extendido el modelo de laaS para también proporcionar TI como servicio (ITaaS). Para las empresas, la ITaaS puede ampliar la funcionalidad de TI sin requerir inversiones en infraestructura nueva
+
+NOTA Mau: En esta parte en netacad habia una pregunta en lo que he leido tontas dejo mencion del capitulo 9.2.2.2
+
+IMAGEN = "10.png"
+
+
+TITULO = "Caaracterísticas de la computación en la nube"
+
+A pedido: Sin contacto humano
+Rápida Elasticidad: Puede aprovisionar cuando sea necesario
+Agrupamiento de recursos: Cliente comparte los diferentes recursos fisicos y virtuales asignados de forma dinámica y reasignados
+Servicio medido: controlar y optimizar automáticamente  los recursos mediante medición
+Amplio acceso a la red: todo online
+
+IMAGEN = "11.png"

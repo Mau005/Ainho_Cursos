@@ -3,7 +3,7 @@ from kivymd.uix.swiper import MDSwiperItem
 
 from Ventanas.ClasesAbstractas import ABScreen
 
-from Core.WidgetPredefinidos import BotonCurso, BotonSiguiente
+from Core.WidgetPredefinidos import BotonCurso, BotonSiguiente, BotonVolverInicio
 from Core.Gestionar_Cursos import Gestionar_Cursos
 from Core.Constantes import CONTROL_RANGOS
 import Core.Herramientas as tl
@@ -38,10 +38,10 @@ class Cursos(ABScreen):
 class ContenidoCurso(ABScreen):
     manejador = ObjectProperty()
 
-    def __init__(self, id_nombre, carpeta_curso, **args):
+    def __init__(self, id_nombre, carpeta_curso, manejador_main, **args):
         super().__init__(id_nombre, **args)
         self.carpeta_curso = carpeta_curso
-        self.listado = ListaCursos(id_nombre, carpeta_curso, self.manejador)
+        self.listado = ListaCursos(id_nombre, carpeta_curso, self.manejador,manejador_main)
         self.manejador.add_widget(self.listado)
         
         contenido = self.listado.lista_cursos
@@ -69,12 +69,13 @@ class Paginas(ABScreen):
 class ListaCursos(ABScreen):
     contenedor = ObjectProperty()
 
-    def __init__(self, id_nombre, carpeta_curso, manejador,**args):
+    def __init__(self, id_nombre, carpeta_curso, manejador,manejador_main,**args):
         super().__init__(id_nombre, **args)
         ruta = f"{cn.RUTA_DEFECTO}/{carpeta_curso}/curso.json"
         contenido = tl.cargar_cursos(ruta)
         self.manejador = manejador
         self.lista_cursos = {}
+        self.manejador_main = manejador_main
 
         for id_curso in contenido.keys():
             obj = BotonCurso(self.name,
@@ -86,6 +87,7 @@ class ListaCursos(ABScreen):
 
             self.lista_cursos.update({obj.nombre:obj})
             self.contenedor.add_widget(obj)
+        self.contenedor.add_widget(BotonVolverInicio(self.manejador_main,"cursos"))
 
     def siguiente(self, nombre, *args):
         self.paginas.current = nombre

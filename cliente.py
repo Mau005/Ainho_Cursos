@@ -18,7 +18,7 @@ class AinhoCursos(MDApp):
 
     def configurar_variables(self):
         self.ingresos = Ingresos("ingreso")
-        self.inicio = Inicio("inicio")
+        self.inicio = Inicio("inicio",self.manejador)
         self.registrar = RegistrarUsuarios("registrar")
 
         self.registrar_ventana(self.ingresos)

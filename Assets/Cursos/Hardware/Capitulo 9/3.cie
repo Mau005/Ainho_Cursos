@@ -1,0 +1,11 @@
+TITULO = "Implementación del servidor tradicional"
+
+las organizaciones entregaban aplicaciones y servicios a sus usuarios mediante potentes servidores dedicados, como se muestra en la figura. Estos servidores de Windows y de Linux son equipos de alta gama con grandes cantidades de RAM, procesadores potentes y múltiples dispositivos de gran almacenamiento.
+
+Recursos desperdiciados: Esto sucede cuando los servidores dedicados se encuentran inactivos durante largos períodos de espera hasta que se les requiere que entreguen su servicio específico. Mientras tanto, estos servidores desperdician energía.
+Punto único de falla: Esto ocurre cuando un servidor dedicado falla o se desconecta. No hay ningún servidor de respaldo para manejar la falla.
+Proliferación de servidores: Esto sucede cuando una organización no tiene el espacio adecuado para alojar físicamente los servidores utilizados de manera insuficiente. Los servidores ocupan más espacio que el que garantizan los servicios que proporcionan.
+
+La virtualización de servidores para utilizar recursos de manera más eficiente aborda estos problemas.
+
+IMAGEN = "3.png"

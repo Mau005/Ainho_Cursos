@@ -1,0 +1,5 @@
+TITULO = "Introducción"
+
+En este capítulo, aprenderá las ventajas que tiene la virtualización sobre el uso tradicional de los servidores dedicados, como el uso de menos recursos, menos espacio requerido, la reducción de costos y el aumento del tiempo de actividad del servidor
+
+IMAGEN = "1.png"

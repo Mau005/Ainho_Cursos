@@ -78,15 +78,16 @@ class RegistrarUsuarios(ABScreen):
 class Inicio(ABScreen):
     manejador_sub_ventanas = ObjectProperty()
 
-    def __init__(self, nombre, **args):
+    def __init__(self, nombre, manejador_main,**args):
         super().__init__(nombre, **args)
+        self.manejador_main = manejador_main
         self.cursos = Cursos("cursos",self.manejador_sub_ventanas)
         self.agregar_sub_ventanas(self.cursos)
         self.procesar_paginas()
 
     def procesar_paginas(self):
         for cursos in self.cursos.lista_cursos.keys():
-            self.manejador_sub_ventanas.add_widget(ContenidoCurso(cursos,self.cursos.lista_cursos[cursos]))
+            self.manejador_sub_ventanas.add_widget(ContenidoCurso(cursos,self.cursos.lista_cursos[cursos],self.manejador_sub_ventanas))
 
     def agregar_sub_ventanas(self, objeto):
         self.manejador_sub_ventanas.add_widget(objeto)

@@ -70,7 +70,7 @@ class Gestionar_Cursos:
                 elif buscar_secuencia == "TITULO":
                     contenido = lineas.split("=")[1].replace('"', "")
                     control_buscar = True
-                    secuencia_curso.append(ModMDLabel(text = contenido,font_style = "H2"))
+                    secuencia_curso.append(ModMDLabel(text = contenido,height = "200dp",font_style = "H2"))
                     break
                 elif buscar_secuencia == "##":
                     control_buscar = True

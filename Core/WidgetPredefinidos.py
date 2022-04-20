@@ -6,6 +6,22 @@ from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.uix.button import MDRectangleFlatButton
 from Core.Constantes import CONTROL_RANGOS
 
+class BotonVolverInicio(MDBoxLayout):
+    def __init__(self,paginas,volver, **kwargs):
+        super().__init__(**kwargs)
+        self.size_hint_y = None 
+        self.height = "25dp"
+        self.spacing = "20dp"
+        self.pos_hint = {"center_x": 1, "center_y": 0.03}
+        self.paginas = paginas
+        self.volver = volver
+        self.btn = MDRectangleFlatButton(text = "Volver", on_release = self.siguiente)
+        self.add_widget(self.btn)
+        
+    def siguiente(self, *Args):
+        print(self.volver)
+        self.paginas.current = self.volver
+    
 class BotonCurso(MDBoxLayout):
     def __init__(self, id_curso_principal, nombre, descr, carpeta,rango, paginas, **kwargs):
         super().__init__(**kwargs)
