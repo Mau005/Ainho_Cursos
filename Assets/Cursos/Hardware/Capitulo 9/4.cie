@@ -1,7 +1,8 @@
 TITULO = "Virtualización de servidores"
 
 La virtualización de servidores aprovecha los recursos inactivos para reducir el número de servidores requeridos
-Para administrar los recursos del equipo y varias VM, se utiliza un programa especial llamado el hipervisor. Este programa proporciona a las VM acceso a todo el hardware de la máquina física, como las CPU, la memoria, los controladores de disco y las NIC. Cada VM ejecuta un sistema operativo completo y separado.
+Para administrar los recursos del equipo y varias VM, se utiliza un programa especial llamado el hipervisor. Este programa proporciona a las
+VM acceso a todo el hardware de la máquina física, como las CPU, la memoria, los controladores de disco y las NIC. Cada VM ejecuta un sistema operativo completo y separado.
 
 IMAGEN = "4.png"
 
@@ -22,15 +23,20 @@ IMAGEN = "5.png"
 
 TITULO = "Virtualización del lado del cliente"
 
-La virtualización del lado del cliente es beneficiosa para el personal de ti, las personas del soporte de TI, desarrolladores de software y evaluadores, y por motivos educativos. Proporciona a los usuarios recursos para probar nuevos sistemas operativos, software o para ejecutar software más antiguo. También se puede utilizar para aislar y crear un entorno aislado seguro para abrir o ejecutar un archivo sospechoso.
+La virtualización del lado del cliente es beneficiosa para el personal de ti, las personas del soporte de TI, desarrolladores de software y evaluadores,
+y por motivos educativos. Proporciona a los usuarios recursos para probar nuevos sistemas operativos, software o para ejecutar software más antiguo. También
+se puede utilizar para aislar y crear un entorno aislado seguro para abrir o ejecutar un archivo sospechoso.
 
 Equip ohost: Es el equipo físico controlado por un usuario. Una VM utiliza los recursos del sistema de la máquina host para arrancar y ejecutar un SO.
-Sistema operativo host (SO host): Este es el sistema operativo del equipo host. Los usuarios pueden utilizar un emulador de virtualización, como VirtualBox, en el SO host para crear y administrar las VM.
+Sistema operativo host (SO host): Este es el sistema operativo del equipo host. Los usuarios pueden utilizar un emulador de virtualización, como VirtualBox, en el
+SO host para crear y administrar las VM.
 Sistema operativo invitado (SO invitado): Este es el sistema operativo que se ejecuta en la VM. Se requieren controladores para ejecutar la versión de SO diferente.
 
-Los sistemas operativos host e invitados no necesitan ser de la misma familia. Por ejemplo, el SO host puede ser Windows 10, mientras que el SO huésped es Linux. Esto es útil para los usuarios que necesitan aumentar la funcionalidad de su equipo host mediante la ejecución de varios sistemas operativos al mismo tiempo.
+Los sistemas operativos host e invitados no necesitan ser de la misma familia. Por ejemplo, el SO host puede ser Windows 10, mientras que el SO huésped es Linux.
+Esto es útil para los usuarios que necesitan aumentar la funcionalidad de su equipo host mediante la ejecución de varios sistemas operativos al mismo tiempo.
 
-La figura muestra un diagrama de una máquina virtual lógica. El cuadro de color gris inferior representa el equipo física con su SO host (por ejemplo, Windows 10). Hyper-V, Virtual PC y VirtualBox son ejemplos de software de virtualización 
+La figura muestra un diagrama de una máquina virtual lógica. El cuadro de color gris inferior representa el equipo física con su SO host (por ejemplo, Windows 10).
+Hyper-V, Virtual PC y VirtualBox son ejemplos de software de virtualización
 
 IMAGEN = "6.png"
 
@@ -38,10 +44,12 @@ IMAGEN = "6.png"
 TITULO = "Hipervisores de tipo 1 y 2"
 
 Hipervisor del tipo 1 (nativo)
-También llamado hipervisor de metal base, se utiliza comúnmente con la virtualización de servidores. Se ejecuta directamente en el hardware de un host y administra la asignación de los recursos del sistema a los sistemas operativos virtuales.
+También llamado hipervisor de metal base, se utiliza comúnmente con la virtualización de servidores. Se ejecuta directamente en el hardware de un host y
+administra la asignación de los recursos del sistema a los sistemas operativos virtuales.
 
 Hipervisor del tipo 2 (alojado)
-Se aloja en un SO y se utiliza comúnmente con la virtualización del lado del cliente. Los software de virtualización, como Windows Hyper-V y VMware Workstation, son ejemplos de un hipervisor del tipo 2.
+Se aloja en un SO y se utiliza comúnmente con la virtualización del lado del cliente. Los software de virtualización, como Windows Hyper-V y VMware Workstation,
+son ejemplos de un hipervisor del tipo 2.
 
 
 Los hipervisores del tipo 1 son comunes en los centros de datos y en la computación en la nube.
@@ -64,10 +72,13 @@ Tenga en cuenta que necesita memoria para su SO host y que ahora necesitará suf
 Almacenamiento
 Cada VM crea archivos muy grandes para almacenar los sistemas operativos, las aplicaciones y todos los datos de la VM.
 Requisitos de red
-Los requisitos de conexión de red dependen del tipo de VM. Algunas VM no requieren conexiones externas, mientras que otras sí. Las VM se pueden configurar en una red puente, NAT, solo host o especial para conectarse solo a otras VM. Para conectarse a Internet, una VM utiliza un adaptador de red virtual que simula ser el adaptador de host real.
+Los requisitos de conexión de red dependen del tipo de VM. Algunas VM no requieren conexiones externas, mientras que otras sí.
+Las VM se pueden configurar en una red puente, NAT, solo host o especial para conectarse solo a otras VM. Para conectarse a Internet, una
+VM utiliza un adaptador de red virtual que simula ser el adaptador de host real.
 Los requisitos mínimos del sistema para Windows Hyper-V para Windows 10 y Windows 8, y para Windows Virtual PC para Windows 7 se muestran en las figuras 1, 2 y 3, respectivamente.
 
-NOTA!!: Si bien las VM se aíslan del host, pueden compartir recursos (por ejemplo, la NIC, carpetas y archivos). Los usuarios deben tomar las mismas consideraciones de seguridad que el host e instalar el software de seguridad, activar las funciones del firewall, instalar parches y actualizar tanto el sistema operativo como los programas. 
+NOTA!!: Si bien las VM se aíslan del host, pueden compartir recursos (por ejemplo, la NIC, carpetas y archivos). Los usuarios deben tomar las mismas
+consideraciones de seguridad que el host e instalar el software de seguridad, activar las funciones del firewall, instalar parches y actualizar tanto el sistema operativo como los programas.
 
 IMAGEN = "8.png"
 

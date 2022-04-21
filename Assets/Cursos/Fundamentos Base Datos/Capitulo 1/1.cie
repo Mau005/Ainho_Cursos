@@ -1,0 +1,117 @@
+TITULO = "Enfoques de bases de datos"
+
+TITULO = "Base de Datos"
+
+
+El concepto de base, procedente del latín basis, tiene múltiples usos.
+
+Un dato, por otra parte, es una información concreta, un testimonio, una prueba o una documentación.
+
+Con ambas definiciones ya podemos detallar los alcances de la noción de base de datos
+
+
+TITULO = "Que es una Base de Datos?"
+Se conoce como base de datos al conjunto de informacion que está organizado y estructurado de un modo específico para que su contenido pueda ser tratado y analizado de manera rápida y sencilla.
+
+Las bases de datos, por lo tanto, presentan datos estructurados de acuerdo a diferentes parámetros. Al disponer la información de una cierta forma, el usuario puede encontrar aquello que busca con facilidad
+
+IMAGEN = "1.png"
+
+
+Entre las ventajas de las bases de datos digitales, velocidad de consulta podemos mencionar la flexibilidad para expandir y relacionar las tablas de formas muy variadas.
+
+
+NOTA Propia:
+La información dentro de una Base de datos es tomado como una ficha tecnica donde se aguardan datos y se procesan,
+es como un formulario de TI donde se arregla un equipo y se debe registrar, esto se puede ver referido en las tablas.
+
+
+Con respecto a la relación entre las diferentes tablas, es éste el punto en el cual la potencia de las bases de datos digitales se vuelve realmente más interesante.
+
+la versión más simple incluiría una tabla con la información personal de cada uno, como ser su nombre y apellido, su fecha de inscripción, su domicilio y los datos de contacto.
+
+IMAGEN = "2.png"
+
+
+
+IMAGEN = "3.png"
+
+
+
+
+
+TITULO = "Arquitectura SGBD"
+
+Un sistema gestor de base de datos: es una colección de programas que permiten a los usuarios crear y mantener una base de datos.
+
+
+Una característica fundamental del SGDB es que proporciona cierto nivel de abstracción de los datos, ocultando así detalles de almacenamiento que para el usuario final no suele ser necesario conocer.
+
+
+Características:
+
+Hay tres características importantes en el enfoque de bases de datos, una de ellas es:
+
+Separa los programas de los datos y las operaciones.
+Soporte de múltiples vistas de usuario.
+utilización de un catalogo para almacenar la descripción (esquema) de la base de datos.
+
+
+TITULO = "Arquitectura SGBD"
+
+En ocasiones se habla de una arquitectura en esquemas:
+Interno: Describe la estructura física de almacenamiento de la base de datos
+Conceptual : Oculta detalles de las estructuras físicas de almacenamiento y concentra su atención en las entidades, tipos de datos, relaciones y restricciones
+En el Esquema externo o de vistas: describe la base de datos para los grupos de usuarios.
+
+No todos los SGBD separan los tres niveles, algunos de ellos se incluyen los esquemas dentro de otros pero si son soportados.
+
+IMAGEN = "4.png"
+
+
+
+Ejemplo de esquema externo:
+ Imaginemos una BD que en el esquema conceptual tiene definida, entre muchas otras, una entidad alumno con los siguientes
+atributos: numatri , nombre, apellido, numRut, direccion, fechanac, teléfono.
+Sin embargo, nos puede interesar que unos determinados programas o usuarios vean la BD formada de acuerdo con un esquema externo que tenga definidas dos entidades, denominadas estudiante y persona.
+La entidad estudiante podría tener definido el atributo numero-matricula (definido como derivable directamente de numatri), el atributo nombre-pila (de nombre), el atributo apellido y el atributo Rut(de numRut).
+La entidad persona podría tener el atributo Rut(obtenido de numRut), el atributo nombre (formado por la concatenación de nombre y apellido), el atributo dirección y el atributo edad (que deriva dinámicamente de fechanac).
+
+
+
+El SGBD permite realizar una transformación o correspondencia de una solicitud para poder expresarla en términos de los esquemas sobre la base de datos almacenada.
+
+
+IMAGEN = "4.png"
+
+
+
+
+TITULO = "Arquitectura SGBD"
+
+Una vez se ha terminado el diseño de la base de datos y se ha elegido el gestor para implementar, el primer paso es crear el esquema conceptual e interno de la base de datos, esto se puede lograr mediante el lenguaje de definición de datos (DDL), cuyas sentencias serán procesadas por el compilador DDL para identificar todas las descripciones de la base de datos.
+
+
+se requerirá un mecanismo para insertar y manipular la información
+
+El SGBD ofrece estas operaciones de manipulación mediante un lenguaje de manipulación de datos (DML).
+
+
+
+
+Normalmente se pueden clasificar los SGBD mediante el criterio modelos de datos en que se basan.
+Los dos tipos de modelos de datos actuales son:
+Modelo de datos relacional
+Modelo de datos orientado a objetos.
+
+Además estas han evolucionado en una nueva clase denominada SGDB objeto-relacionales.
+
+
+Algunas ventajas relevantes de utilizar un SGBD son:
+El control de redundancia de datos,
+El control de restricciones de acceso a usuarios,
+Almacenamiento persistente de estructuras y objetos de base de datos,
+Múltiples interfaces de usuario,
+Integridad referencial,
+Seguridad y Recuperación.
+

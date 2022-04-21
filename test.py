@@ -1,16 +1,15 @@
-#numeros Impares
-import random
-lista_impar = []
-lista_par = []
+from random import randint
+numeros_aleatorios = [randint(1,200) for _ in range(200)]
+Numeros_impar = []
+Numeros_par = []
 
-
-for numeros in range(0,200):
-    numero_generado = random.randint(0,200)
-    if numero_generado % 2 == 0:
-        lista_par.append(numero_generado)
+for numeros in numeros_aleatorios:
+    if numeros % 2 == 0:
+        Numeros_par.append(numeros)
     else:
-        lista_impar.append(numero_generado)
+        Numeros_impar.append(numeros)
 
-
-print(f"Lista Impar: {lista_impar}")
-print(f"Lista Par: {lista_par}")
+print()
+print(f"Numeros Impar: {Numeros_impar}")
+print()
+print(f"Numeros Par: {Numeros_par}")

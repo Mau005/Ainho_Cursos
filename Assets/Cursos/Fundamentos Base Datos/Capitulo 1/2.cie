@@ -1,0 +1,86 @@
+TITULO = "Modelo de datos"
+
+TITULO = "Qué es?"
+
+Un modelo de datos corresponde a un “mecanismo formal para representar y manipular información de manera general y sistemática”
+
+UN modelo de datos debe representar datos y debe ser comprensibles
+
+
+Los modelos de datos se clasifican en
+Modelo externo, Modelo Conceptual y Modelo Interno
+NOTA ES IMPORTANTE ESTO!!!
+
+El Modelo externo se refiere a lo que el usuario virualiza o "representa"
+
+Modelo Conceptual consolida los distintos involucrados en la realidad a presentar en el caso de modelo de datos. este permite revisar las consistencias y validar que todo los datos asociaciones hayan sido identificados
+
+
+Modelo Interno: es un modelo que muestra en forma abstracta cada parte en el lugar en que debe ir.
+
+
+Para representar un modelo de datos, existen distintos tipos de simbologías
+
+Modelos de datos independientes de la tecnología (como el E-R y el orientado a objeto).
+
+Modelos de datos dependientes de la tecnología (como el jerárquico, redes y relacional).
+
+
+TITULO = "SEMÁNTICA DE LOS DATOS"
+
+El significado de los datos es frecuentemente denominado semántica de los datos. Cuando se realiza un análisis organizacional resulta muy difícil capturar los datos y sus asociaciones para todas las situaciones en que los datos van a ser usados.
+
+
+TITULO = "CARDINALIDAD O CONECTIVIDAD"
+Expresa el número máximo de entidades que están relacionadas o asociadas con una única entidad del otro conjunto de entidades que interviene en la relación.
+
+
+TITULO = "GRADO"
+Es el número de entidades que participan en una asociación.
+
+Los grados más típicos son Unaria, Binaria y ternaria
+
+IMAGEN = "5.png"
+
+IMAGEN = "6.png"
+
+IMAGEN = "7.png"
+
+IMAGEN = "8.png"
+
+TITULO = "DEPENDENCIA"
+Se refiere al hecho que alguna entidad no puede existir sin la ocurrencia de otra entidad
+
+
+IMAGEN = "9.png"
+
+TITULO = "TIEMPO"
+
+Es un componente multifacético y complejo del dato; se refiere a si el contenido de una base de datos varía o no en el tiempo.
+
+IMAGEN = "10.png"
+
+
+La Unicidad se representa en asocianoes
+
+TITULO = "Generalización"
+
+Permite definir una clase de entidad general que representa a entidades que tienen distinto significado en la organización, pero características o atributos similares.
+
+
+TITULO = "Generalización"
+Hereda atributos de su superclase
+tiene atributos propios
+
+
+TITULO = "Agregación"
+
+Colección de entidades diferentes pero relacionadas.
+Por ejemplo, una ORDEN_DE_TRABAJO involucra la participación de las entidades MATERIA_PRIMA, HERRAMIENTAS, CENTRO_DE_TRABAJO Y TRABAJADOR.
+
+TITULO = "SEMÁNTICA  EN LOS MODELOS DE DATOS"
+
+IMAGEN = "11.png"
+
+
+

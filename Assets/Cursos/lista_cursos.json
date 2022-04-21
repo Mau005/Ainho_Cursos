@@ -1,14 +1,26 @@
 {
     "1": {
+        "titulo": "Introducción",
+        "descr": "Creación de Resumenes",
+        "carpeta": "Introducción",
+        "logo": "logo.png"
+    },
+    "2": {
         "titulo": "Hardware Cisco 1-3",
         "descr": "breve introduccion",
         "carpeta": "Hardware",
         "logo": "logo.png"
     },
-    "2":{
+    "3":{
         "titulo": "Python",
         "descr": "Curso de python basico de code avengers",
         "carpeta": "Python",
+        "logo": "logo.png"
+    },
+    "4":{
+        "titulo": "Fundamento de BD",
+        "descr": "Curso de Fundamentos INCAP",
+        "carpeta": "Fundamentos Base Datos",
         "logo": "logo.png"
     }
 }

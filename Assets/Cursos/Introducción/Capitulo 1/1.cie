@@ -1,0 +1,86 @@
+TITULO = "Bienvenidos"
+
+TITULO = "Introducción de Ainho Cursos""
+
+Primero que nada tengo que explicarles que este proyecto fue diseñado con el afan de poder estudair
+sin depender de conexiones a internet, aun que en el futuro se piensa realizar.
+Este proyecto fue desarrollado para estudiantes, con tiempo libre limitado,
+en cual necesitan una pequeña guia para recordar y mirar en cualquier parte con el.
+
+
+Empezemos
+
+En la carpeta principal del proyecto se encuentra una carpeta "assets" esta carpeta contiene.
+la información que se ejecutara para producir el curso o resumen
+
+IMAGEN = "1.png"
+
+En cual contiene  otra llamada "Cursos" dentro de esta: "assets/Cursos"
+se encuentra una lista llamada "lista_cursos.json" este documento administra los cursos
+a mostrar y sus rutas en carpetas, debes abrirlo con un HiperTexto (Block de notas, VS code,
+Pycharm, etc etc)
+
+Como pueden ver en la imagen:
+
+IMAGEN = "2.png"
+
+
+donde contiene una estructura para identificar el ID como el numero, Titulo, pequeña descripcion
+carpeta donde se encuentra el curso y el logo o imagen que quieren asignar todo esto debe estar contenida
+en la misma carpeta donde se encuentra el curso en concreto
+deben respetar las "," y el objeto final no puede poseer una de esta
+
+
+
+Dentro de la carpeta del curso que queremos crear debemos generar varias carpetas o como queramos
+subdividir el resumen
+entre capitulos o cuantos tendra
+
+como en la imagen:
+
+IMAGEN = "3.png"
+
+
+En esta parte tendremos el logo que veran al abrir la App, el "curso.json" administra
+como estaran ubicadas los capitulos
+
+abriremos Capitulo 1 este tendra mas informacion como por ejemplo "Imagenes" todas las imagenes
+a colocar en el proyecto tendran que colcarse en esta parte, por capitulos.
+
+Cada capitulo tiene una carpeta de imagenes, y pueden generar la cantidad de paginas que deseen
+mostraremos la estructura.
+
+En esta imagen veran una estructura y un formato ".cie"
+fue diseñado por la abreviación de  Cursos Incap Estudiantes, quisas cambie algo mas adelante
+dependiendo del exito de esto.
+
+NOTA IMPORTANTE las paginas tienen que estar enumaradas y progresivas para que pueda ayarlas
+de esta forma la app entiendo donde buscar
+
+IMAGEN = "4.png"
+
+El formato ".cie" es un archivo de texto plano que indica como estara estructurada la pagina
+tiene distintas formas de expresarse
+por ejemplo:
+
+IMAGEN = "5.png"
+
+
+Entonces el proyecto en el codigo tiene como palabras reservadas IMAGEN y TITULO
+que ambas frazes adapta de forma distinta el texto en la aplicaciones
+tanbien podemos poner comentarios en el texto
+como por ejemplo dos almoadillas ## y el texto
+
+ahora volveremos una carpeta atras y mostraremos como se gestiona el curso 
+
+archivo "curso.json" este archivo es unico para gestionar los capitulos
+es identico al anterior la diferencia que este almacena como gestionar los capitulos
+y cuantas paginas tiene este en "rango"
+donde dicha lista [1,1] indica que hay 1 objeto y recorra solo 1
+si la lista esta [1,10] significa que buscara del 1 hasta el numero 10 buscando los archivos
+
+Imagen de referencia:
+IMAGEN = "6.png"
+
+
+

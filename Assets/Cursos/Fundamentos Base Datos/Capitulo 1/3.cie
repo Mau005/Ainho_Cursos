@@ -1,0 +1,67 @@
+TITULO = "Modelos independientes de la tecnología"
+Los modelos conceptuales se pueden trabajar de forma independiente de la tecnología (0 SGBD).
+
+¿Qué se pretende? Principalmente que estos modelos sean capaces  de capturar la semántica de los datos y las distintas situaciones en las cuales los datos se pueden encontrar.
+
+Los modelos independientes de la tecnología más utilizados en la actualidad
+Modelo de datos Entidad Relación (E-R)
+Modelo de datos orientado a objeto
+
+IMAGEN = "12.png"
+
+IMAGEN = "13.png"
+
+
+IMAGEN = "14.png"
+
+IMAGEN = "15.png"
+
+
+TITULO = "NOTA es importante esto"
+
+IMAGEN = "16.png"
+
+IMAGEN = "17.png"
+
+IMAGEN = "18.png"
+
+La semántica de generalización: ISA
+Cuandro Atributos diferentes son usados para describir cada subclase de entidad
+
+Cuando cada subclase de entidad participa en diferentes asociaciones
+
+cuando se presenta 1 y 2 a la vez
+
+TITULO = "Modelo de datos orientado a objetos"
+
+Se define como una estructura que encapsula (o empaqueta) atributos y métodos que operan sobre objetos.
+
+TITULO = "Simbología usada en el OODM"
+
+Nombre Objeto == Vehículo
+Atributos == motor,años marca, modelo
+Métodos == Vender vehiculos
+
+IMAGEN = "19.png"
+
+
+TITULO = "Semántica de generalización en OODM:"
+Es una de las más poderosas características del OODM, corresponde a la también llamada semántica de la clase-subclase.
+
+Para representarla se utiliza una jerarquía de generalización que agrupa objetos que tienen atributos y métodos comunes, siendo los objetos de más bajo nivel quienes heredan los atributos y los métodos de la clase superior.
+
+
+
+IMAGEN = "20.png"
+
+IMAGEN = "21.png"
+
+IMAGEN = "22.png"
+
+IMAGEN = "23.png"
+
+IMAGEN = "24.png"
+
+IMAGEN = "25.png"
+
+IMAGEN = "26.png"

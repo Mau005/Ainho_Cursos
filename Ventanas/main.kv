@@ -64,16 +64,12 @@
             id: usuario
             hint_text: "correo"
             icon_right: "account"
-            size_hint_x: None
-            width: 200
             font_size: 18
             pos_hint: {"center_x": 0.5}
         MDTextField:
             id: password
             hint_text: "contraseña"
             icon_right: "eye-off"
-            size_hint_x: None
-            width: 200
             font_size: 18
             pos_hint: {"center_x": 0.5}
             password: True
@@ -95,6 +91,3 @@
             font_size: 12
             pos_hint: {"center_x": 0.5, "center_y": 0.5}
             on_press: root.siguiente("inicio")
-        Widget:
-            size_hint_y: None
-            height: 10

@@ -1,0 +1,57 @@
+TITULO = "Normalización de base de datos"
+
+Es el proceso mediante el cual se transforman datos complejos en un conjunto de estructuras de datos más pequeñas que son más fáciles de mantener.
+
+
+TITULO = "¿Para qué se normalizan las bases de datos?"
+-Evitar la redundancia de datos.
+-Evitar problemas de actualización de los datos en las tablas.
+-Proteger la integridad de los datos.
+
+
+TITULO = "Clave primaria"
+Es aquella columna (o conjunto de columnas) que identifica únicamente a una fila. La clave primaria es un identificador que va a ser siempre único para cada fila.
+
+TITULO = "Clave Candidata"
+Es aquella columna que no ha sido seleccionada como clave primaria, pero que también puede identificar de forma única a una fila dentro de una tabla.
+
+TITULO = "Clave Foránea"
+Es aquella columna que existiendo como dependiente en una tabla es, a su vez, clave primaria en otra tabla.
+
+TITULO = "Clave Compuesta"
+Es una clave que está compuesta por más de una columna.
+IMAGEN = "27.png"
+
+IMAGEN = "28.png"
+
+
+TITULO = "segunda Forma normal"
+Una relación está en 2FN si está en 1FN y si los atributos que no forman parte de ninguna clave dependen de forma completa de la clave principal.
+
+Por ejemplo:
+(RUT, ID_PROYECTO)  HORAS_TRABAJO
+Con el rut de un empleado y el ID de un proyecto sabemos cuántas horas por semana trabaja un empleado en dicho proyecto. Esto es completamente funcional dado que ni RUTHORAS_TRABAJO ni ID_PROYECTO HORAS TRABAJO mantienen la dependencia.
+Sin embargo, {RUT, ID_PROYECTO} -NOMBRE_EMPLEADO es parcialmente dependiente dado que RUT NOMBRE_EMPLEADO mantiene la dependencia.
+
+
+TITULO = "tercera Forma normal 3FN"
+La tabla se encuentra en 3FN si y solo si las dos condiciones siguientes se cumplen:
+La tabla está en la segunda forma normal (2NF).
+
+Ningún atributo no-primario de la tabla es dependiente transitivamente de una clave primaria.
+
+TITULO = "Forma normal de boyce-codd (fnbc)"
+Es una forma normal utilizada en la normalización de bases de datos. Es una adaptación vagamente más segura de lo establecido en la Tercera Forma Normal (3FN).
+
+Es una etapa en que se deben agrupar los datos por afinidad, formando tablas, las cuales se relacionan entre sí mediante campos comunes.
+
+TITULO = "cuarta Forma normal 4FN"
+Una tabla está en 4FN si y solo si está en tercera forma normal o en FNBC (cualquiera de ambas) y no posee dependencias multivaluadas no triviales.
+
+En una tabla con una dependencia multivaluada la existencia de dos o más relaciones independientes muchos a muchos causa redundancia; y es esta redundancia la que es suprimida por la cuarta forma normal.
+
+TITULO = "Quinta forma normal 5FN"
+Es un nivel de normalización de bases de datos diseñado para disminuir redundancia en las bases de datos relacionales, que guardan hechos multivalores aislando semánticamente relaciones múltiples vinculadas.
+
+Se dice que una tabla está en 5NF si y solo si está en 4NF y cada dependencia de unión (join) en ella es implicada por las claves candidatas
+
