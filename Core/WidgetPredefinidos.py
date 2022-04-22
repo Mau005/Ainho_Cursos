@@ -12,7 +12,7 @@ class BotonVolverInicio(MDBoxLayout):
         self.size_hint_y = None 
         self.height = "25dp"
         self.spacing = "20dp"
-        self.pos_hint = {"center_x": 1, "center_y": 0.03}
+        
         self.paginas = paginas
         self.volver = volver
         self.btn = MDRectangleFlatButton(text = "Volver", on_release = self.siguiente)
@@ -59,7 +59,7 @@ class BotonSiguiente(MDBoxLayout):
         self.size_hint_y = None 
         self.height = "25dp"
         self.spacing = "20dp"
-        self.pos_hint = {"center_x": 1, "center_y": 0.03}
+
         self.btn1  = MDRectangleFlatButton(text = "Atras", on_release = self.volver)
         self.btn2 = MDRectangleFlatButton(text = "Volver a Menu",on_release = self.default)
         self.btn3 = MDRectangleFlatButton(text = "Siguiente", on_release = self.siguiente)

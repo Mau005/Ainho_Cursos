@@ -54,10 +54,11 @@
                     font_style: "Caption"
                     size_hint_y: None
                     height: self.texture_size[1]
-
-                MDTextButton:
-                    icon: "language-python"
-                    text: "Cursos"
+                MDLabel:
+                    text: "Creado por Mau"
+                    font_style: "Caption"
+                    size_hint_y: None
+                    height: self.texture_size[1]
 
                 MDTextButton:
                     icon: "language-python"
@@ -74,23 +75,6 @@
                 MDFillRoundFlatIconButton:
                     icon: "language-python"
                     text: "Suscribete"
-                ScrollView:
-                    id: md_list
-                    BoxLayout:
-                        orientation: "vertical"
-                        size_hint_y: None
-                        MDTextButton:
-                            icon: "language-python"
-                            text: "Mis Cursos"
-                        MDTextButton:
-                            icon: "language-python"
-                            text: "Mis Cursos"
-                        MDTextButton:
-                            icon: "language-python"
-                            text: "Mis Cursos"
-                        MDTextButton:
-                            icon: "language-python"
-                            text: "Mis Cursos"
 
 
 <SwiperObjectos@MDSwiperItem>
@@ -103,17 +87,23 @@
 
         MDBoxLayout:
             adaptive_height: True
-            spacing: "12dp"
+            spacing: "14dp"
             radius: [0, 0, image.radius[0], image.radius[0]]
 
-
-            MDTextButton:
+            MDRectangleFlatButton:
                 id: boton_curso
-                font_style: "H5"
-                size_hint_y: None
-                height: self.texture_size[1]
-                pos_hint: {"center_y": .5}
+                size_hint: None, None
+                size: image.size
+                font_style: "H1"
                 shorten: True
+
+        MDLabel:
+            id: informacion
+            font_style: "H5"
+            size_hint_y: None
+            height: self.texture_size[1]
+            
+            shorten: True
 
 <ContenidoCurso>:
     manejador : manejador

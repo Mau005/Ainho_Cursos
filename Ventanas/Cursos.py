@@ -87,7 +87,7 @@ class ListaCursos(ABScreen):
 
             self.lista_cursos.update({obj.nombre:obj})
             self.contenedor.add_widget(obj)
-        self.contenedor.add_widget(BotonVolverInicio(self.manejador_main,"cursos"))
+        self.ids.screen.add_widget(BotonVolverInicio(self.manejador_main,"cursos"))
 
     def siguiente(self, nombre, *args):
         self.paginas.current = nombre
@@ -103,7 +103,7 @@ class SwiperObjectos(MDSwiperItem):
         self.paginas = paginas
         self.titulo = titulo
         self.descr = descr
-        self.boton_curso.text = self.titulo + self.descr
+        self.ids.informacion.text = self.titulo + self.descr
         self.boton_curso.on_release = self.func_ingresos
         self.carpeta = carpeta
         self.logo = logo
