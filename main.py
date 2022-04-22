@@ -34,5 +34,4 @@ class AinhoCursos(MDApp):
         return self.manejador
 
 
-if __name__ == "__main__":
-    AinhoCursos().run()
+AinhoCursos().run()
