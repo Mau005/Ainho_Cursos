@@ -79,31 +79,10 @@
 
 <SwiperObjectos@MDSwiperItem>
     image:image
-    boton_curso : boton_curso
     RelativeLayout:
-        FitImage:
+        SmartTileWithLabel
             id: image
-            radius: [30,]
-
-        MDBoxLayout:
-            adaptive_height: True
-            spacing: "14dp"
-            radius: [0, 0, image.radius[0], image.radius[0]]
-
-            MDRectangleFlatButton:
-                id: boton_curso
-                size_hint: None, None
-                size: image.size
-                font_style: "H1"
-                shorten: True
-
-        MDLabel:
-            id: informacion
-            font_style: "H5"
-            size_hint_y: None
-            height: self.texture_size[1]
             
-            shorten: True
 
 <ContenidoCurso>:
     manejador : manejador
@@ -138,8 +117,8 @@
 <Cursos>
     contenedor_imagenes: contenedor_imagenes
     MDBoxLayout:
+
         orientation: 'vertical'
-        spacing: '8dp'
         MDSwiper:
             id: contenedor_imagenes
 <Paginas>:

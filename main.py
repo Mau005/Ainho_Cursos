@@ -33,5 +33,4 @@ class AinhoCursos(MDApp):
         self.title = "Ainho Cursos v1.0 Beta"
         return self.manejador
 
-
 AinhoCursos().run()

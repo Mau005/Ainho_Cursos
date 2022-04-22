@@ -95,7 +95,7 @@ class ListaCursos(ABScreen):
 
 class SwiperObjectos(MDSwiperItem):
     image = ObjectProperty()
-    boton_curso = ObjectProperty()
+    #boton_curso = ObjectProperty()
 
     def __init__(self, id_curso, titulo, descr, carpeta, logo, paginas, **kwargs):
         super().__init__(**kwargs)
@@ -103,8 +103,9 @@ class SwiperObjectos(MDSwiperItem):
         self.paginas = paginas
         self.titulo = titulo
         self.descr = descr
-        self.ids.informacion.text = self.titulo + self.descr
-        self.boton_curso.on_release = self.func_ingresos
+        self.image.text = f"[size=36]{self.titulo}  {self.descr}[/size]"
+        self.image.on_release = self.func_ingresos
+        #self.boton_curso.on_release = self.func_ingresos
         self.carpeta = carpeta
         self.logo = logo
         ruta = f"{cn.RUTA_DEFECTO}/{self.carpeta}/{self.logo}"
