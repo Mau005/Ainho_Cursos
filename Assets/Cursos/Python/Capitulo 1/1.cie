@@ -1,4 +1,44 @@
 TITULO = Introducción a Python
 
-Python es un lenguaje ....
 
+Python es un lenguaje de programación de alto nivel cuya máxima es la legibilidad del código. Las principales características de Python son las siguientes:
+
+Es multiparadigma, ya que soporta la programación imperativa, programación orientada a objetos y funcional.
+Es multiplataforma: Se puede encontrar un intérprete de Python para los principales sistemas operativos: Windows, Linux y Mac OS. Además, se puede reutilizar el mismo código en cada una de las plataformas.
+Es dinámicamente tipado: Es decir, el tipo de las variables se decide en tiempo de ejecución.
+Es fuertemente tipado: No se puede usar una variable en un contexto fuera de su tipo. Si se quisiera, habría que hacer una conversión de tipos.
+Es interpretado: El código no se compila a lenguaje máquina.
+
+
+
+TITULO = "El intérprete de Python"
+Cuando instalas Python correctamente (en cualquier sistema operativo) ocurren, entre otras, 
+dos cosas: se añade el comando python (o python3, en caso de que instales la versión 3.x de Python) 
+al path y se instala el intérprete de Python correspondiente.
+
+
+En el intérprete de Python podemos escribir expresiones e instrucciones que este interpretará y ejecutará.
+
+Puedes probar, por ejemplo, a escribir 2 + 3. El resultado debe ser el siguiente:
+
+>>> 2 + 3
+5
+O ejecutar la instrucción print('¡Hola mundo!'):
+
+>>> print('¡Hola mundo!')
+¡Hola mundo!
+Para salir del intérprete basta con ejecutar la instrucción quit().
+
+
+Primer programa en Python
+Normalmente, los programas en Python se escriben en archivos con la extensión .py. Estos archivos se pasan al intérprete de Python para que los interprete y ejecute.
+
+Vamos a verlo con un ejemplo. Crea con un editor de texto un fichero llamado suma.py con el siguiente contenido:
+
+suma = 2 + 3
+print(suma)
+A continuación abre un terminal, sitúate en el directorio en el que creaste el archivo suma.py y ejecuta lo siguiente:
+
+python3 suma.py
+En el terminal verás que aparece el número 5 como resultado de ejecutar el programa anterior. ¿Qué ha ocurrido aquí?
+Básicamente que el intérprete de Python ha leído y ejecutado las líneas de código que hemos escrito en el fichero suma.py.
