@@ -16,6 +16,12 @@
         "descr" : "la Nube",
         "carpeta": "Capitulo 9",
         "rango": [1,5]
+    },
+    "4":{
+        "nombre": "Capitulo 10",
+        "descr" : "Sistemas Operativos",
+        "carpeta": "Capitulo 10",
+        "rango": [1,6]
     }
 
 }

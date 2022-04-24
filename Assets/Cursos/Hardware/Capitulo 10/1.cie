@@ -1,0 +1,34 @@
+TITULO = "Intalación de Windows"
+
+Los profesionales de TI deben comprender las funciones generales de cualquier sistema operativo (SO)
+como controlar el acceso al hardware, administrar archivos y carpetas,
+proporcionar una interfaz de usuario y administrar apliaciones.
+
+El técnico debe comprender PRESUPUESTO, FORMA QUE SE UTILIZARA EL EQUIPO Y LOS TIPOS DE APLICACIONES QUE SE INSTALARAN
+
+Tomando en cuenta de mejorar siempre el rendimiento para los usuarios finales.
+
+
+TITULO = "Términos"
+
+Un Sistema Operativo (SO) cuenta con varias funciones. Una de las tareas principales es actuar como una interfaz entre el usuario y el hardware conectados al equipo. El sistema operativo tanbién controla otras funciones
+
+RECURSOS DE SOFTWARE
+ASIGNACIÓN DE MEMORIA Y TODOS LOS DISPOSITIVOS PERIFÉRICOS
+SERVICIOS COMUNES AL SOFTWARE DE APLICACIÓN DE UN EQUIPO
+
+
+Terminos basicos de los SO:
+
+MULTIUSUARIO: dos o más usuarios tienen cuentas individuales que les permiten trabajar con programas y dispositivos periféricos de forma simultáneas
+
+MULTITAREA: EL equipo es capaz de operar varias aplicaciones de forma simultáneas
+
+MULTIPROCESAMIENTO:El sistema operativo puede admitir dos o más CPU
+
+SUBPROCESOS MÚLTIPLES: Se puede dividir un programa en partes más pequeñas que se cargan tal como un sistema operativo lo necesite. los subprocesos múltiples permiten que se ejecuten distintas partes de un programa de forma simultánea
+
+
+El sistema operativo arranca la PC y administra el sistema de archivos. Los sistemas operativos pueden admitir más de un usuario, tarea o CPU.
+
+IMAGEN = "1.png"

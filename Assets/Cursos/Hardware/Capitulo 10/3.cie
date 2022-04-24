@@ -1,0 +1,69 @@
+TITULO = "Requisitos de hardware y software de sistema compatible"
+
+
+Para recomendar un SO, el técnico debe analizar las limitaciones presupuestarias, saber cómo se 
+utilizará el equipo y determinar qué tipos de aplicaciones se instalarán en él y cuándo se 
+comprará un nuevo equipo. Las siguientes son algunas pautas que pueden ayudar a determinar el 
+mejor sistema operativo para un cliente:
+
+¿El cliente utiliza aplicaciones disponibles comercialmente en este equipo? 
+En el empaque de las aplicaciones disponibles comercialmente, se detallan los sistemas 
+operativos compatibles con la aplicación.
+
+¿El cliente utiliza aplicaciones personalizadas programadas específicamente para él? 
+Si el cliente utiliza una aplicación personalizada, el programador de dicha aplicación especifica qué 
+sistema operativo utilizar.
+
+
+Los sistemas operativos tienen requisitos mínimos de hardware que se deben cumplir para 
+que el sistema operativo se instale y funcione correctamente.
+
+RAM
+Unidad de disco duro
+CPU
+Tarjeta de adaptador de video
+Placa base
+Nota: Si los requisitos de la aplicación exceden los requisitos de hardware del sistema operativo, debe cumplir con los requisitos adicionales para que la aplicación funcione correctamente.
+
+
+
+TITULO = "Arquitectura de procesador de 32 bits vs. 64 bits"
+Los términos 32 bits y 64 bits se refieren a la cantidad de datos que la CPU de un equipo puede administrar. Un registro de 32 bits puede almacenar 2^32 distintos valores binarios. Por lo tanto, un procesador de 32 bits puede direccionar directamente 4.294.967.295 bytes. Un registro de 64 bits puede almacenar 2^64 valores binarios distintos. Por lo tanto, uno de 64 bits puede direccionar directamente 18.446.744.073.709.551.615 bytes.
+
+IMAGEN = "3.png"
+
+
+TITULO = "Comprobación de compatibilidad del SO"
+
+Los sistemas operativos se deben actualizar de forma periódica para que continúen siendo compatibles con el hardware y software más reciente. También es necesario actualizar el sistema operativo cuando el fabricante deja de brindar soporte para este. La actualización del sistema operativo puede mejorar el rendimiento. Por lo general, los productos de hardware nuevos requieren que se instale la última versión del sistema operativo para funcionar correctamente. Si bien la actualización de un sistema operativo puede resultar costosa, se puede obtener una mayor funcionalidad gracias a las nuevas características del software y compatibilidad con hardware nuevo.
+
+Nota: Cuando se lanzan nuevas versiones de un sistema operativo, en algún momento se deja de proporcionar soporte para versiones anteriores.
+
+TITULO = "Actualizaciones de SO Windows"
+El proceso de actualización del sistema operativo de un equipo puede ser más rápido que realizar una nueva instalación. El proceso de actualización varía según la versión de Windows a actualizar.
+
+Nota: Antes de llevar a cabo una actualización, realice una copia de seguridad por si se presenta un problema con la instalación. Además, se debe activar la versión de Windows siendo actualizada.
+
+Los equipos que ejecutan Windows XP o Windows Vista no tienen una ruta de actualización a Windows 10 y requieren una instalación limpia. Los medios de instalación de Windows 10 se pueden crear con la herramienta para crear medios de instalación de Windows 10. Esta herramienta crea medios de instalación (Flash USB, DVD o ISO) que se pueden utilizar para realizar una instalación limpia.
+
+
+TITULO = "Migración de datos"
+Cuando se requiere una nueva instalacion, se deben migrar los datos del sistema operativo anterior al nuevo
+
+TITULO = "Herramienta de migración"
+La herramienta de migración de estados de usuario (USMT) es una utilidad de linea de comando desarrollada por Microsoft
+para que los usuarios que se sienten cómodos con los lenguajes de scripting transfieran archivos y configuraciones entre pc con WIndows.
+Es una de las varias herramientas esenciales de evaluación y desarrollo incluidas en Windows Assessment and Deployment Kit, que se puede descargar del sitio web de Microsoft
+
+
+TITULO = "Windows Easy Transfer"
+SI un usuario está cambiando de una computadora antigua a una nueva, utilice Windows Easy Transfer para migrar archivos personales y las opciones de configuración,
+Puede realizar trannsferencia de archivos mediante USB,CD o DVD
+memoria Flash o unidad externa, red
+soporte windows vista, 7, 8
+
+TITULO = "PCmover Express"
+Se usa PCmover para transferir aplicaciones en la nueva PC, donde se instalarán y estarán listas para usar
+
+
+IMAGEN = "4.png"

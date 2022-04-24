@@ -1,0 +1,107 @@
+TITULO = "Sistemas de archivos"
+
+La instalación de un sistema operativo se realiza como si el disco fuese nuevo. No se conserva nada de la información que exista en ese momento en el disco duro. La primera
+fase del proceso de instalación consta de la creación de particiones y el formato del disco duro
+
+Tabla de asignación de archivos de 32 bits (FAT32): Admite particiones de hasta 2 TB o 2048 GB. El sistema de archivos FAT32 se utiliza en Windows XP y versiones de sistemas operativos anteriores.
+
+
+Sistema de archivos de nueva tecnología (NTFS): En teoría, admite particiones de hasta 16 exabytes. El NTFS incorpora las funciones de seguridad del sistema de archivos y atributos extendidos. Windows 8.1, Windows 7 y Windows 10 crean una partición de forma automática
+utilizando todo el disco duro. Si el usuario no crea particiones personalizadas por medio de la opción Nuevo, como se muestra en la figura, el sistema formatea la partición y comienza a instalar Windows. Si el usuario crea una partición, puede determinar el tamaño de esta.
+
+exFAT (FAT64): Creado para subsanar algunas de las limitaciones de FAT, FAT32 y NTFS presentes al formatear unidades Flash USB, como tamaño de archivo y de directorio. Una de las principales ventajas de exFAT es que puede admitir archivos mayores de 4 GB.
+
+Sistema de archivos de disco compacto (CDFS): Se creó específicamente para medios de disco óptico.
+
+NFS (sistema de archivos de red): NFS es un sistema de archivos con base en la red, que permite el acceso al archivo en la red. En la vista del usuario, no hay diferencia entre
+el acceso de un archivo almacenado localmente o en otro equipo en la red. NFS es un estándar abierto que permite que cualquiera lo implemente.
+
+
+Comparación de formato rápido y formato completo
+
+El formato rápido elimina archivos de la partición, pero no examina el disco en busca de sectores defectuosos. El proceso de examinar un disco en busca de sectores defectuosos
+puede prevenir una futura pérdida de datos. Por ello, no utilice el formato rápido para discos que ya hayan sido formateados.
+
+El formato completo elimina archivos de la partición, al tiempo que examina el disco en busca de sectores defectuosos. Este proceso debe hacerse en todos los discos duros nuevos. La opción de formato completo tarda más tiempo en completarse.
+
+
+
+TITULO = "NOTA"
+
+Compañeros en esta parte muestran una serie de videos donde enseñan a instalar windows, supongo que muchos de nosotros ya lo hemos echo, explican como crear cuentas de usuarios.
+lamentablemente en este momento cuando estoy creando esta guia, no me encuentro muy bien de salud, como para diseñar un sistema de videos en la app, asi que les dejo la referencia a buscar en youtube
+Como instalar WIndows 10
+Como crear Cuentas en Windows 10
+Diferencias entre formateo Rapido y formateo normal
+
+
+TITULO = "Clonación de discos"
+La instalación de un SO en un solo equipo lleva tiempo. Imagínese el tiempo que llevaría instalar sistemas operativos en varias PC, una por una. Para simplificar esta actividad, los administradores escogen generalmente un equipo para actuar como un sistema básico y pasar por el proceso regular de instalación del sistema operativo. Después de que SO
+esté instalado en el equipo base, se utiliza un programa específico para duplicar toda la información en su disco, sector por sector, a otro disco. Este nuevo disco, generalmente un dispositivo externo, ahora contiene un sistema operativo completamente
+implementado y se puede utilizar para implementar rápidamente una copia nueva del sistema operativo base,
+
+
+Para ejecutar Sysprep en Windows 10, abra el Windows Explorer y navegue hacia C:\Windows\System32\sysprep. También puede simplemente escribir "Sysprep" en el comando Ejecutar y hacer clic en "Aceptar".
+
+NOTA Comapñeros con Tecla Windows + R abriran un ejecutar si escriben "sysprep" accederan de inmediato a la ruta.
+
+IMAGEN = "7.png"
+
+
+
+TITULO = "Otros Métodos de instalación"
+Una instalación estándar de Windows es suficiente para la mayoría de los equipos utilizados en un entorno doméstico o de oficinas pequeñas pero hay casos en que se requiere un proceso de instalación personalizada
+
+
+La instalación personalizada de Windows puede ahorrar tiempo y proporcionar una configuración coherente en todos los equipos dentro de una organización extensa. Una técnica popular para instalar Windows en muchos equipos es realizar la instalación en un equipo y usarla como instalación de referencia. Cuando la instalación se ha completado, se crea una imagen. Una imagen es un archivo que contiene todos los datos de una partición.
+
+Windows tiene distintos tipos de instalaciones personalizadas:
+
+Instalación de la red Esto incluye la Instalación del entorno de ejecución de arranque previo (PXE), la Instalación desatendida y la Instalación remota.
+Instalación de partición interna basada en imágenes Es una imagen de Windows almacenada en una partición interna (a menudo oculta) que se puede utilizar para restaurar Windows a su estado original cuando se envió desde la fábrica.
+Otros tipos de instalaciones personalizadas Esto incluye las opciones de inicio avanzadas de Windows, actualizar su equipo (Windows 8.x solamente), la restauración del sistema, la actualización, la instalación de reparación, la instalación de la red remota, la partición de recuperación y la actualización/restauración.
+
+
+TITULO = "Instalación de red remota"
+Un método popular para la instalación del sistema operativo en entornos con muchos equipos es una instalación de la red remota. Con este método, los archivos de instalación del sistema operativo se almacenan en un servidor de modo que un equipo cliente tenga acceso a los archivos de forma remota para comenzar la instalación. Un paquete de software como servicios de instalación remota (RIS) se utiliza para comunicarse con el cliente, almacenar archivos de configuración, y para suministrar instrucciones necesarias para que el cliente acceda a los archivos de configuración, los descargue, y comience la instalación del sistema operativo.
+
+Debido a que el equipo cliente no tiene un sistema operativo instalado, se debe utilizar un entorno especial para arrancar el equipo, conectarlo a la red, y comunicarse con el servidor para iniciar el proceso de instalación. Este entorno especial se conoce como el entorno de ejecución de prearranque (PXE). Para que el PXE funcione, el NIC PXE debe estar habilitado. Esta funcionalidad puede provenir del BIOS o del firmware de la NIC. Cuando se inicia el equipo, la NIC escucha instrucciones especiales en la red para iniciar el PXE.
+
+Nota: Si la NIC no está habilitada para PXE, el software de terceros puede usarse para cargar el PXE de medios de almacenamiento.
+
+
+TITULO = "Instalación de red desatendida"
+La instalación desatendida, otra instalación basada en la red, permite que actualicen o instalen un sistema Windows con poca intervención del usuario. La instalación desatendida de Windows se basa en archivo de respuesta. Este archivo contiene texto simple que le indica a la configuración de Windows cómo configurar e instalar el sistema operativo.
+
+Para realizar la instalación desatendida de Windows, se debe ejecutar setup.exe con opciones del usuario que se encuentran en el archivo de respuesta. El proceso de instalación comenzará de forma normal pero en lugar de solicitar usuario, la configuración usa las respuestas que aparecen en el archivo de respuesta.
+
+
+Se copia el archivo de respuesta a la carpeta compartida de distribución en un servidor. En este momento, tiene dos alternativas:
+
+Ejecutar el archivo unattended.bat en la máquina cliente para preparar el disco duro e instalar el sistema operativo desde el servidor a través de la red.
+Cree un disco de arranque para arrancar el equipo y hacer que se conecte a la carpeta compartida de distribución en el servidor. Luego, ejecute un archivo por lotes que contiene un conjunto de instrucciones para instalar el SO sobre la red.
+
+Nota: Windows SIM forma parte del Kit de instalación automatizada de Windows y se puede descargar desde el sitio web de Microsoft.
+
+
+
+TITULO = "Partición de recuperación"
+Algunos equipos que vienen con Windows instalado tienen una sección del disco a la que el usuario no puede acceder. Esta partición, llamada partición de recuperación, contiene una imagen que se puede utilizar para restaurar el equipo a su configuración original.
+
+La partición de recuperación a menudo se oculta para evitar que se utilice para otro fin que no sea la restauración. Para restaurar el equipo utilizando la partición de recuperación, a menudo se debe utilizar una tecla especial o una combinación de teclas
+cuando el equipo arranca. A veces, la opción para restaurar desde la partición de recuperación de fábrica se encuentra en el BIOS o un programa del fabricante al que se accede en Windows. Comuníquese con el fabricante de la PC para averiguar cómo acceder a la partición y restaurar la configuración original de la PC.
+
+Nota: Si el sistema operativo se dañó debido a una unidad de disco duro defectuosa, la partición de recuperación también puede estar dañada e imposibilitada para recuperar el sistema operativo.
+
+TITULO = "Métodos de actualización"
+La ruta más simple para actualizar una PC que actualmente ejecuta Windows 7 o Windows 8.1 a Windows 10 es a través de una actualización en el lugar. Esto actualizará el sistema operativo y migrará las aplicaciones y la configuración al nuevo sistema operativo. La secuencia de tareas de System Center Configuration Manager se puede utilizar para automatizar el proceso por completo. La figura muestra la secuencia de tareas de actualización del Administrador de Configuración para Windows 10.
+
+Instalación limpia
+
+Otra forma de actualizar a una versión más reciente de Windows es realizar una actualización limpia. Debido a que una instalación limpia borrará la unidad completamente, todos los archivos y datos deben guardarse en algún tipo de unidad de respaldo.
+
+Antes de que pueda realizarse una instalación limpia de Windows, se deberán crear los medios de instalación. Esto puede ser en un disco o una unidad Flash en la que la PC puede arrancar para ejecutar la configuración. Windows 7, 8.1 y 10 se pueden descargar directamente desde Microsoft. El sitio web de descarga de Windows incluye las instrucciones para crear los medios de instalación.
+
+Nota: se necesita una clave de producto válida para la versión y la edición de Windows en particular, a fin de activar Windows después del proceso de instalación.
+
+IMAGEN = "8.png"

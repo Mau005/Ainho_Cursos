@@ -1,0 +1,27 @@
+TITULO = "Secuencia de arranque de Windows"
+Una vez que finaliza el POST, el BIOS ubica y lee la configuración almacenada en la memoria CMOS. La prioridad del dispositivo de arranque,
+es el orden en el que se comprueban los dispositivos para ubicar la partición de arranque. La prioridad del dispositivo de arranque se establece en el BIOS y se puede disponer en cualquier orden. El BIOS arranca el equipo utilizando la primera unidad que contenga un sector de arranque válido. Este sector contiene el Registro de arranque maestro (MBR). El MBR identifica el Registro de arranque del volumen (VBR), que carga el administrador de arranque, y para Windows es bootmgr.exe.
+
+Los discos duros, las unidades de red, las unidades USB e incluso los medios extraíbles pueden usarse en el orden de arranque, dependiendo en las funcionalidades de la placa base. Algunos BIOS también tienen un menú de prioridad del dispositivo de arranque al que se accede con una tecla especial durante el inicio del equipo. Puede utilizar este menú para seleccionar el dispositivo para arrancar, como se muestra en la figura.
+
+
+
+TITULO = "Modos de inicio de Windows 7"
+Modo seguro: Modo de diagnóstico utilizado para solucionar problemas de Windows y de inicio de Windows. La funcionalidad es limitada, ya que muchos controladores de dispositivos no se cargan.
+Modo seguro con funciones de red: Inicia Windows en modo seguro con soporte de redes.
+Modo seguro con símbolo del sistema: Inicia Windows y carga el símbolo del sistema en lugar de la GUI.
+Última configuración válida conocida : Carga la configuración utilizada la última vez que Windows se inició correctamente. Esto se logra al acceder a una copia del registro que se crea con este propósito.
+
+
+Nota: La última configuración válida conocida no es útil, a menos que se aplique inmediatamente después de que se produce un error. Si se reinicia la PC y esta logra abrir Windows, se actualiza el registro con la información defectuosa.
+
+
+
+TITULO = "Modos de inicio de Windows 8 y 10"
+Tanto Windows 8 como Windows 10 arrancan demasiado rápido para usar F8 para acceder a la configuración de inicio. En cambio, mantenga presionada la tecla Shift y seleccione la opción Reiniciar en el menú Alimentación. Aparecerá la pantalla Escoger una opción. Para obtener la configuración de inicio, seleccione Solucionar problemas y, luego, en la
+siguiente pantalla, seleccione Opciones avanzadas. Dentro de opciones avanzadas, seleccione la configuración de Inicio y, luego, en la siguiente pantalla, seleccione Reiniciar. Luego, el equipo se reiniciará y mostrará el menú Configuración de inicio que se muestra en la figura. Para escoger una opción de inicio, utilice el número o las
+teclas de función F1-F9 que correspondan a la opción deseada.
+
+
+
+IMAGEN = "9.png"

@@ -1,0 +1,73 @@
+TITULO = "Tipos de dispositivos de almacenamiento"
+Como técnico, es posible que deba realizar una instalación limpia de un sistema operativo. Realice una instalación limpia en las siguientes situaciones:
+
+Cuando un equipo pasa de un empleado a otro.
+Cuando el SO está dañado.
+Cuando se reemplaza el disco duro principal en una PC.
+
+A la instalación y el arranque inicial del sistema operativo se los conocen como “configuración del sistema operativo”. Si bien es posible instalar un sistema operativo por medio de una red desde un servidor o desde un disco duro local, el método de
+instalación más común en un hogar o una pequeña empresa es a través de un dispositivo externo, por ejemplo, una unidad de DVD o USB.
+
+
+Nota: Si el hardware no es compatible con el sistema operativo, es posible que necesite instalar controladores de terceros al realizar la instalación limpia.
+
+Antes de que el sistema operativo se pueda instalar, se debe escoger y preparar un dispositivo de medios de almacenamiento. Varios tipos de dispositivos de almacenamiento están disponibles y pueden utilizarse
+para recibir el nuevo sistema operativo. Los dos tipos más comunes de dispositivos de almacenamiento de datos que se utilizan actualmente son discos duros y unidades basadas en la memoria Flash, como los discos duros de estado sólidos y las unidades USB.
+
+
+TITULO = "Creación de particiones del disco duro"
+
+Los discos duros se dividen en áreas llamadas particiones. Cada partición es una unidad lógica de almacenamiento que se puede formatear para almacenar información, como archivos de datos o aplicaciones.
+Si imagina un disco duro como un armario de madera, las particiones serían los estantes. Durante el proceso de instalación, la mayoría de los sistemas operativos crean particiones del espacio disponible en el disco duro y lo
+formatean de forma automática.
+
+La división de una unidad es un proceso sencillo, pero para garantizar un arranque exitoso, el firmware debe conocer qué disco y qué partición del disco poseen un sistema operativo instalado. El esquema de la partición tiene influencia directa en la ubicación de los sistemas operativos en un disco. Encontrar e iniciar el sistema operativo es una de las responsabilidades del firmware del equipo. El esquema de la partición es muy importante para el firmware. Dos de los estándares de esquema de partición más populares son el registro de arranque maestro (MBR) y la tabla de particiones (GPT) de identificador único global (GUID).
+
+Registro de arranque maestro
+
+Presentado públicamente en 1983, el registro de arranque maestro (MBR) contiene información sobre cómo se organizan las particiones del disco duro. El MBR tiene 512 bytes de longitud y contiene el cargador de arranque, un programa ejecutable que permite al usuario escoger entre varios sistemas operativos. MBR se ha convertido en el estándar de hecho pero tiene limitaciones que debieron abordarse. MBR se suele utilizar en los equipos con firmware basado en BIOS.
+
+Tabla de partición de GUID.
+
+También diseñado como un estándar del esquema de la tabla de partición para unidades de disco duro, el GPT hace uso de varias técnicas modernas para expandir el esquema de partición MBR antiguo. El GPT se suele utilizar en los equipos con el firmware UEFI. La mayoría de los sistemas operativos modernos ahora admiten el GPT.
+
+
+IMAGEN = "5.png"
+
+
+TITULO = "Partición primaria"
+
+Es la primera partición estas no se pueden subdividir en secciones más pequeñas. En un disco particionado GPT, todas las particiones son particiones primarias, En un disco de particionamiento MBR, puede haber un máximo de cuatro particiones de las cuales una sola será principal
+
+TITULO = "Partición activa"
+En discos MBR, la partición activa es la partición que se utiliza para almacenar y para arrancar un sistema operativo. Observe que solo las particiones principales se pueden marcar como activas en los discors MBR.
+lA limitacion es que solo una de las particiones primarias por disco se puede marcar como activa al mismo tiempo.
+el disco C: es la partición activa y contiene los archivos de arranque y del sistema.
+
+
+TITULO = "Partición extendida"
+Si se requieren más de 4 particiones en un disco MBR, una de las particiones principales se puede designar como extendida. hasta 23 unidades lógicas o particiones lógicas se pueden crear en esta partición extendida.
+
+NOTA unidades lógicas no se puede usar para arrancar el sistema son ideales para almacenar datos
+NOTA solo una partición extendida por disco duro MBR y solo estan presentes en la unidades MBR
+
+TITULO = "Unidad Lógica"
+Una unidad lógica es una sección de una partición extendida, Se puede utilizar para separar información con fines administrativos. Dado que las unidades GPT no pueden tener particiones extendidas, no tienen unidades lógicas
+
+
+TITULO = "Disco Básico"
+Contiene particiones como las principales, la extendida y las unidades lógicas, que se formatean para el almacenamiento de datos.
+puede asignarse mas espacio o sin asignar siempre que sea contiguo, MBR o el GPT se pueden utilizar como el esquema subyacente de la partición de los discos básicos
+
+
+TITULO = "Disco Dinámico"
+Tiene la capacidad de crear volumenes que se extienden por más de un disco.
+las particiones se pueden modificar
+Se puede agregar espacio desde el mismo disco o desde uno diferente que le permite al usuario agregar archivos de gran tamaño
+una véz que se extiende una partición. no se puede reducir sin eliminar la partición por completo MBR o el GPT se puede utilizar como esquema de partición de los discos dinamicos
+
+TITULO = "Formateo"
+Este proceso crea un sistema de archivos en una partición para almacenar archivos
+
+
+IMAGEN = "6.png"

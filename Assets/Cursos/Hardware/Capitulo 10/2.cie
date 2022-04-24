@@ -1,0 +1,49 @@
+TITULO = "Funciones Básicas de los SO"
+
+Todos los SO realizan las mismas cuatro funciones basicas
+
+CONTROL DE ACCESO AL HARDWARE
+ADMINISTRACIÓN DE ARCHIVOS Y CARPETAS
+PROPORCIÓN DE UNA INTERFAZ DE USUARIO
+ADMINISTRACIÓN DE APLIACIONES
+
+
+
+TITULO = "Acceso a hardware"
+El sistema operativo administra la interaccion entre las aplicaciones y el hardware. Utlizando 
+un programa llamado "controlador de dispositivos". EL SO. localiza e instala el controlador de 
+dicho componente La asignacion de los recursos del sistema y la instalación de controladores se 
+llevan acabo mediante el proceso Plug and Play (PnP), luego el SO configura el dispositivo y 
+actualiza el registro, el cual es una base de datos que contiene toda la información del PC
+
+
+TITULO = "Administración de archivo y carpetas"
+El SO crea una estructura de archivos en la unidad de disco duro para almacenar datos. 
+Un archivo es un bloque de datos relacionados al que se le otorga un único nombre y que se 
+trata como una unidad unica.
+Ñps archivos de programas y de datos se agrupan en directorios. los archivos y los directorios se 
+organizan para facilitar su uso y recuperación, estos se pueden agregar sobre si mismo convirtiendose 
+en subdirectorios
+
+
+
+TITULO = "Interfaz de usuario"
+EL SO permite que el usuario interactue con el sofware
+existen 2 tipos de interfaces
+INTERFAZ DE LÍNEA DE COMBADO (CLI): EL USUARIO INTRODUCE COMANDOS EN EL SIMBOLO DEL SISTEMA
+INTERFAZ GRÁFICA DE USUARIO (GUI) EL USUARIO INTERACTUA CON MENUS E ICONOS
+
+TITULO = "Administración de aplicaciones"
+el SO localiza una aplicacion y la carga en RAM,
+el SO asigna recursos del sistema disponibles a las aplicaciones en ejecuccion.
+Las API les permiten a los programas acceder a rlos recursos administrador por el SO de forma 
+coherente y confiable. Los Siguientes son algunos ejemplos de API
+
+Open Graphics Library (OpenGL): es una especificación estándar interplataforma para gráficos multimedia
+DirectX: es una colección de varias API relacionadas con las tareas multimedia para Microsoft Windows
+API de Windows: Proporciona a los desarrolladores de app controles de la interfaz de usuario, adm de archivos, elementos gráficos como ventanas etc etc
+Las API de Java: vaias API relacionadas con el desarrollo de programación en java
+
+IMAGEN = "2.png"
+
+
