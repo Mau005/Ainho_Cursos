@@ -1,0 +1,24 @@
+TITULO = "Instalación de Entorno"
+
+
+Primero iremos al link correspondiente a descargar los programas:
+
+TITULO = "Python"
+Tenemos muchos tipos de interprete pero en este curso trabajaremos con Anaconda que es un interprete de python diseñado para trabajar con entornos de trabajo
+link: "https://www.anaconda.com/products/distribution"
+
+TITULO = "Editor de Codigo"
+Tenemos muchas alternativas como Pycharm, Spider, VScode, VIM, etc etc, en este curso utilizaremos Vs Code
+link: "https://code.visualstudio.com/"
+
+
+Luego de instalar ambas recuerda en el instalador agregar los PATH del sistema python a tu entorno lo realiza el instalador, debemos descargar las extenciones necesarias para poder trabajar en VsCode
+
+IMAGEN = "1.PNG"
+
+
+Ahora con esto recien podemos empezar a trabajar en python
+
+
+
+

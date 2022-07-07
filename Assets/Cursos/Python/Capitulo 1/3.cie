@@ -1,0 +1,52 @@
+print(Yo Quiero \"Estudiar\"")
+print('Yo Quiero "Estudiar"')
+
+
+esta función tan bien puede sumar cadenas o decir concadenar
+print("Mi Primera cadena: "+ " Mi Segunda cadena ") #Cuando uno utiliza la sentencia + concadena con otra cadena volviéndola una sola cadena de texto
+
+podrá hacer lo mismo con los números?
+print("Mi Cadena" + 4324)
+tendríamos un error de Exception has occurred: TypeError concatenate str (not "int") to str Esto nos indica que no podemos sumar una cadena de caracteres con una de enteros dado que los números están solos sin usar las comillas ""
+
+print("Mi Cadena" + "4324") #Ahora si funcionaria correctamente dado que los números los indicamos como cadena de string
+
+pero podre sumar ambos numeros?
+
+print("2" + "2") # esto en nuestra matemática nos indicaría que seria 4 el resultado pero al mostrarlo por pantalla este daría un valor de 22
+dado que son caracteres y lo único que hace es unirla quedando "22"
+
+pero esto realmente cambia cuando realizamos como enteros sin las "" de string
+print(2 + 2)# esto nos da como resultado 4
+
+tan bien tenemos una funcion especial dentro de nuestro print llamado "end=" esto nos ayuda al momento de quere tener un formato predeterminado en el programa, por ejemplo
+print("Mau","Juan","Antonio") #Resultado "Mau Juan Antonio"
+print("Mau","Juan","Antonio", end="!") #Resultado Mau Juan Antonio!
+
+lo que estamos indicandole con el argumento end= es indicarle al programa que termine con algo ppor ejemplo
+print("Mau","Juan","Antonio", end="final")#Resultado: Mau Juan Antoniofinal
+Pero realmente esto se ve afectado cuando realizamos muchas funciones print
+print("Prueba 1")
+print("Prueba 2")
+print("Prueba 3")
+print("Prueba 4")
+#resultado Prueba 1
+#resultado Prueba 2
+#resultado Prueba 3
+#resultado Prueba 4
+
+print("Prueba 1", end= " ")
+print("Prueba 2", end= " ")
+print("Prueba 3", end= " ")
+print("Prueba 4", end= " ")
+#Resultado: Prueba 1Prueba 2Prueba 3Prueba 4
+
+tanbien tenemos otro Argumento llamado set mostremoslo mejor:
+print("Mau","Juan","Antonio", sep="-") #Resultado: Mau-Juan-Antonio
+Podemos indicar que remplaza las "," por un argumento dado en sep como es el "-" 
+
+TITULO = "Conclusión"
+
+Podremos darnos cuenta que print() es una función muy usada y nos sirve para poder ver los datos que queremos mostrar, tanto como para indicar cuánto vale nuestra variable o en que parte estoy ejecutando el Código
+Los caracteres de escape "\" son útiles para poder gestionar el uso de forma correcta de nuestras cadenas de string.
+y el argmunto end= nos indica como queremos que finalice nuestro print() con un salto de línea o espacios o etc

@@ -1,0 +1,38 @@
+TITULO = "Literal"
+
+Un literal se refiere a datos cuyos valores estan determinados por el literal mismo
+Por ejemplo estos dijitos:
+123 # esto es un litera y sabes lo que es un numero ciento veinte tres
+
+pero que tal si te digo esto:
+
+c # En esto momento no sabes que es, o que representa
+
+y este es el truco: 123 es un literal, y c no lo es.
+
+
+
+TITULO = "Enteros"
+
+Numeros enteros es decir que no tienen una parte fraccionaria y numeros de punto flotantes (flotantes) son aquellos que si tienen una parte fraccionaria
+Un numero entero no puede conponerse de ningun caracter especial por ejemplo 1.000.000 o 1,000,000 pero sabes que desde Python 3.6 permite la legibilidad con guiones ejemplo 1_111_111
+como seria un negativo? colocando un - antes del numero ejemplo -1000000
+
+
+TITULO = "Enteros: números octales y hexadecimales"
+Existen dos convenciones adicionales en Python que no son conocidas en el mundo de las matemáticas. El primero nos permite utilizar un número en su representación octal.
+Si un numero entero esta precedido por un código 0O o 0o (cero-o), el numero será tratado como un valor octal. Esto significa que el número debe contener dígitos en el rango del [0..7] únicamente.
+
+0o123 es un número octal con un valor (decimal) igual a 83.
+
+ejemplo:
+print(0o123) #Resultado 83
+
+
+La segunda convención nos permite utilizar números en hexadecimal. Dichos números deben ser precedidos por el prefijo 0x o 0X (cero-x).
+
+0x123 es un número hexadecimal con un valor (decimal) igual a 291. La función print() puede manejar estos valores también. Intenta esto:
+
+print(0x123) #resultado es 291
+
+Esto corresponde a los numeros Enteros

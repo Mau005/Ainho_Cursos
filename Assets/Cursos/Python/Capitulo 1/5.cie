@@ -1,0 +1,10 @@
+TITULO  = "Flotantes"
+
+Representa y almacenar los números que (como lo diría un matemático) tienen una parte decimal no vacía.
+Cuando se usan términos como dos y medio o menos cero punto cuatro, pensamos en números que la computadora considera como números punto-flotante:
+
+Ejemplos:
+2.5
+-0.4
+
+Estos numeros tan bien pueden ser acortados ejemplo 2.0 seria igual a 2. o por ejemplo 0.4 seria igual a .4 siempre y cuando sea un 0 en esa posicion que omitimos
